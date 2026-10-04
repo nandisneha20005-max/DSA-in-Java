@@ -7,16 +7,15 @@ Hi, I'm Sneha Nandi! This is my daily DSA practice for placement.
 - Language: Java
 - Started: Oct 2026
 ## 📅 Progress Tracker - 375 Days Challenge
-
 | Day | Topic | Problems | Status | Solution Link |
 |---|---|---|---|---|
 | Day 01 | Arrays - Easy | Largest Element in Array | ✅ Done | [Code](./Day01_LargestElement) |
 | Day 02 | Arrays - Easy | Second Largest & Second Smallest | ✅ Done | [Code](./Day02_SecondLargest) |
 | Day 03 | Arrays - Easy | 1. Check if Array is Sorted <br> 2. Remove Duplicates (LC 26) | ✅ Done | [Code](./Day03_CheckSorted_RemoveDuplicates) |
-| Day 04 | Arrays - Easy | 1. Left Rotate Array by One <br> 2. Move Zeros to End (LC 283) | ⏳ Next | - |
-| Day 05 | Arrays - Easy | 1. Linear Search <br> 2. Union of Two Sorted Arrays | ⏳ Upcoming | - |
+| Day 04 | Arrays - Easy | 1. Move Zeros to End (LC 283) <br> 2. Union of Two Sorted Arrays | ✅ Done | [Code](./Day04_MoveZeroes_Union) |
+| Day 05 | Arrays - Easy | 1. Left Rotate Array by One <br> 2. Linear Search | ⏳ Next | - |
 
-**Total Progress: 3 / 375 Days Completed (0.8%)**
+**Total Progress: 4 / 375 Days Completed (1.06%)**
 
 ### 📂 Structure
 Each Day folder contains Java solutions with pattern notes.
@@ -83,4 +82,12 @@ largest=1, second=-1
 **Example:** [1,1,2,2,3] -> [1,2,3] -> return 3
 **Complexity:** O(n), O(1)
 
+## 🧠 Day 04 - What I Learned Today
+- **Move Zeroes:** O(n) time, O(1) space - `j` pointer diye non-zero track kora.
+- **Union:** Two pointer diye duplicate avoid kora.
+- **Git:** GitHub Web theke direct file upload & README update.
+
+---
+⭐ Star this repo if you are also doing Striver Sheet!
+#DSA #Java #StriverSheet #100DaysOfCode
 
