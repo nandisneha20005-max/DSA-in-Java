@@ -14,7 +14,10 @@ Hi, I'm Sneha Nandi! This is my daily DSA practice for placement.
 | Day 03 | Arrays - Easy | 1. Check if Array is Sorted<br>2. Remove Duplicates (LC 26) | ✅ Done | [Code](./Day03_CheckSorted_RemoveDuplicates.java) |
 | Day 04 | Arrays - Easy | 1. Move Zeros to End (LC 283)<br>2. Union of Two Sorted Arrays | ✅ Done | [Code](./Day04_MoveZeroes_283.java) |
 | Day 05 | Sliding Window & Two Pointers | 1. Trapping Rain Water (LC 42)<br>2. Longest Substring Without Repeating (LC 3) | ✅ Done | [Code](./Day05_Trapping_Rainwater.java) |
+| 06 | 2026-10-06 | 152 | Maximum Product Subarray | Arrays, DP | Medium | O(n) | ✅ Solved |
+| 06 | 2026-10-06 | 153 | Find Minimum in Rotated Sorted Array | Binary Search | Medium | O(log n) | ✅ Solved |
 
+**Total Solved: 2 (Day 06)**
 **Progress: 5 / 375 Days Completed**
 **Total Progress: 4 / 375 Days Completed (1.06%)**
 
@@ -136,6 +139,37 @@ Loop: `for(right=0; right < n; right++)`:
 **Complexity:**
 - Time: O(n)
 - Space: O(n)
+- # Day 06 - Arrays & Binary Search
+
+Solved 2 LeetCode problems focusing on Array manipulation and Binary Search optimization.
+
+### 📅 Date: 6th Oct 2026
+
+## Problems Solved
+
+### 1. LeetCode 152 - Maximum Product Subarray [Medium]
+- **Approach:** Dynamic Tracking (Kadane's Variant)
+- **Key Logic:** Maintain both `max` and `min` product ending at current index. When we encounter a negative number, swap max and min because negative * negative = positive.
+- **Complexity:**
+    - Time: `O(n)`
+    - Space: `O(1)`
+- **Performance:** 192/192 Tests Passed | 2ms (70.49%) | 47.02 MB (87.32%)
+- **File:** `152-Maximum-Product-Subarray/Solution.java`
+
+### 2. LeetCode 153 - Find Minimum in Rotated Sorted Array [Medium]
+- **Approach:** Binary Search
+- **Key Logic:** If `nums[mid] > nums[right]`, minimum lies on the right side (`left = mid + 1`). Else, it lies on the left including mid (`right = mid`).
+- **Complexity:**
+    - Time: `O(log n)`
+    - Space: `O(1)`
+- **Performance:** 0ms (100%) | Runtime Beats 100%
+- **File:** `153-Min-in-Rotated-Sorted-Array/Solution.java`
+
+## Learnings
+- Handling negatives in product problems requires tracking both min and max.
+- Rotated array minimum can be found without linear scan using modified binary search.
+
+
 
 ---
 ⭐ Star this repo if you are also doing Striver Sheet!
