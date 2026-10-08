@@ -16,6 +16,9 @@ Hi, I'm Sneha Nandi! This is my daily DSA practice for placement.
 | Day 05 | Sliding Window & Two Pointers | 1. Trapping Rain Water (LC 42)<br>2. Longest Substring Without Repeating (LC 3) | ✅ Done | [Code](./Day05_Trapping_Rainwater.java) |
 | 06 | 2026-10-06 | 152 | Maximum Product Subarray | Arrays, DP | Medium | O(n) | ✅ Solved |
 | 06 | 2026-10-06 | 153 | Find Minimum in Rotated Sorted Array | Binary Search | Medium | O(log n) | ✅ Solved |
+| 07 | 2026-10-07 |Arrays_Medium| 3 sum problem |solved |
+| 08 | Container With Most Water |Two Pointers (Greedy) |O(n) | O(1) | ✅ |
+| 08 | Kth Smallest Element |Min-Heap / QuickSelect|O(n log k) | O(k) | ✅ |
 
 **Total Solved: 2 (Day 06)**
 **Progress: 5 / 375 Days Completed**
@@ -168,6 +171,38 @@ Solved 2 LeetCode problems focusing on Array manipulation and Binary Search opti
 ## Learnings
 - Handling negatives in product problems requires tracking both min and max.
 - Rotated array minimum can be found without linear scan using modified binary search.
+## 📅 Day 08 – DSA Practice
+
+### Problems Solved
+
+#### 1. Container With Most Water
+
+* **Approach:** Two Pointer
+* **Time Complexity:** `O(n)`
+* **Space Complexity:** `O(1)`
+* **Key Concept:** Two Pointers, Greedy Approach
+
+The solution uses two pointers starting from both ends of the array. At every step, the area is calculated and the pointer corresponding to the shorter height is moved inward to find a potentially larger container.
+
+#### 2. Kth Smallest Element
+
+* **Approach:** Quickselect
+* **Average Time Complexity:** `O(n)`
+* **Worst-Case Time Complexity:** `O(n²)`
+* **Space Complexity:** `O(1)`
+* **Key Concept:** Partitioning, Quickselect
+
+The solution uses the Quickselect algorithm to partition the array around a pivot and searches only the relevant portion instead of completely sorting the array.
+
+### 🧠 Key Learnings
+
+* Practiced the **Two Pointer technique** for optimizing array problems.
+* Learned how to achieve `O(n)` time for the Container With Most Water problem.
+* Understood the **Quickselect algorithm** for finding the kth smallest element efficiently.
+* Improved understanding of **in-place algorithms** and space optimization.
+
+**Day 08 completed ✅**
+
 
 
 
