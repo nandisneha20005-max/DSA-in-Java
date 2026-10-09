@@ -19,6 +19,8 @@ Hi, I'm Sneha Nandi! This is my daily DSA practice for placement.
 | 07 | 2026-10-07 |Arrays_Medium| 3 sum problem |solved |
 | 08 | Container With Most Water |Two Pointers (Greedy) |O(n) | O(1) | ✅ |
 | 08 | Kth Smallest Element |Min-Heap / QuickSelect|O(n log k) | O(k) | ✅ |
+| 09 | Maximum and minimum element in an Array | comparing in pairs | o(n) | ✅ solved |
+| 09 | Reverse an Array |  Single Pointer | o(n) | ✅ solved |
 
 **Total Solved: 2 (Day 06)**
 **Progress: 5 / 375 Days Completed**
@@ -202,6 +204,32 @@ The solution uses the Quickselect algorithm to partition the array around a pivo
 * Improved understanding of **in-place algorithms** and space optimization.
 
 **Day 08 completed ✅**
+
+## 📅 Day 09 – DSA Practice
+
+
+### Problems Solved
+#### 1. Maximum and Minimum element in an Array
+
+* **Approach:** Compairing in pairs
+* **Time Complexity:** `O(n)`
+* **Space Complexity:** `O(1)`
+* **Key Concept:** Optimal Approach
+
+#### 2.Array Reverse
+
+* **Approach:** Single pointer
+*Time Complexity:** o(n)
+* **Space Complexity:** `O(1)`
+* **Key Concept:** iterate over the first half and then swapping 
+
+### 🧠 Key Learnings
+
+* Practiced the **Single pointer technique** for optimizing array problems.
+* Learned how to achieve `O(n)` time for the Mim and max element finding in an array
+
+**Day 09 completed ✅**
+
 
 
 
