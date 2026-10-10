@@ -228,7 +228,37 @@ The solution uses the Quickselect algorithm to partition the array around a pivo
 * Practiced the **Single pointer technique** for optimizing array problems.
 * Learned how to achieve `O(n)` time for the Mim and max element finding in an array
 
-**Day 09 completed ✅**
+
+
+  ** Day 10 problems**
+###1 : Contains Duplicate — Optimal Approach
+
+**Problem:** Given an integer array `nums`, return `true` if any value appears at least twice in the array. Return `false` if every element is distinct.
+
+**Approach: HashSet**
+
+The optimal approach uses a HashSet to detect duplicate elements efficiently. A HashSet stores unique elements and provides average \(O(1)\) time complexity for search and insertion.
+
+**Algorithm:**
+1. Initialize an empty HashSet.
+2. Iterate through each element of the array.
+3. Check whether the current element already exists in the set.
+4. If it exists, return `true` because a duplicate has been found.
+5. Otherwise, insert the element into the set.
+6. If the entire array is traversed without finding a duplicate, return `false`.
+
+**Example:**
+
+- Input: `nums = [1, 2, 3, 1]`
+- Output: `true`
+- Explanation: The element `1` appears twice in the array.
+
+**Complexity Analysis:**
+- **Time Complexity:** \(O(n)\) average case, where \(n\) is the length of the array.
+- **Space Complexity:** \(O(n)\), as the HashSet may store all array elements.
+
+**Key Concept:** Hashing using Java's `HashSet` for efficient duplicate detection.
+
 
 
 
