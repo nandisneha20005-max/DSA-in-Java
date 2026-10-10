@@ -227,7 +227,7 @@ The solution uses the Quickselect algorithm to partition the array around a pivo
 
 * Practiced the **Single pointer technique** for optimizing array problems.
 * Learned how to achieve `O(n)` time for the Mim and max element finding in an array
-
+** Day 09 Completed✅  **
 
 
   ** Day 10 problems**
@@ -261,8 +261,34 @@ The optimal approach uses a HashSet to detect duplicate elements efficiently. A 
 
 
 
+### 2  :Next Permutation — Optimal Approach
 
+**Problem:** Given an array of integers, rearrange the numbers into the lexicographically next greater permutation. If no greater permutation exists, rearrange the array into its smallest permutation in ascending order.
 
+**Approach: Breakpoint, Swap, and Reverse**
+
+The optimal approach modifies the array in place using three main steps. It avoids generating all possible permutations and achieves linear time complexity.
+
+**Algorithm:**
+1. Start from the second-last index and find the first element smaller than its next element. This is called the breakpoint.
+2. If a breakpoint exists, search from the right to find the first element greater than the breakpoint element.
+3. Swap the breakpoint element with the next greater element.
+4. Reverse the suffix after the breakpoint to arrange it in ascending order.
+5. If no breakpoint exists, reverse the entire array to obtain the smallest permutation.
+
+**Example:**
+
+- Input: `nums = [1, 2, 3]`
+- Output: `nums = [1, 3, 2]`
+- Explanation: `[1, 3, 2]` is the next lexicographically greater permutation after `[1, 2, 3]`.
+
+**Complexity Analysis:**
+- **Time Complexity:** \(O(n)\), where \(n\) is the length of the array.
+- **Space Complexity:** \(O(1)\), because the array is modified in place using constant extra space.
+
+**Key Concepts:** Array manipulation, two pointers, swapping, reversing, and lexicographical ordering.
+
+**Day 10 Completed✅   **
 
 ---
 ⭐ Star this repo if you are also doing Striver Sheet!
