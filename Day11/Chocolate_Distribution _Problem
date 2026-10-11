@@ -1,0 +1,29 @@
+
+import java.util.Arrays;
+
+class Solution {
+    public int findMinDiff(int[] arr, int m) {
+        int n = arr.length;
+
+        // Handle invalid cases
+        if (m == 0 || n == 0 || m > n) {
+            return 0;
+        }
+
+        // Sort the array
+        Arrays.sort(arr);
+
+        // Initialize minimum difference
+        int minDiff = Integer.MAX_VALUE;
+
+        // Check every group of m packets
+        for (int i = 0; i + m - 1 < n; i++) {
+            int diff = arr[i + m - 1] - arr[i];
+
+            // Update minimum difference
+            minDiff = Math.min(minDiff, diff);
+        }
+
+        return minDiff;
+    }
+}
