@@ -289,6 +289,165 @@ The optimal approach modifies the array in place using three main steps. It avoi
 **Key Concepts:** Array manipulation, two pointers, swapping, reversing, and lexicographical ordering.
 
 **Day 10 Completed✅   **
+# Chocolate Distribution Problem
+
+## Problem Statement
+Given an array `arr[]` where each element represents the number of chocolates in a packet, and an integer `m` representing the number of students, distribute one packet to each student such that the difference between the maximum and minimum number of chocolates is minimized.
+
+Return the minimum possible difference.
+
+## Optimal Approach: Sorting + Sliding Window
+
+### Approach
+1. Sort the array in ascending order.
+2. Consider every group of `m` consecutive packets.
+3. Calculate the difference between the last and first elements of each group.
+4. Update the minimum difference whenever a smaller difference is found.
+5. Return the minimum difference.
+
+Since the array is sorted, the first and last elements of each group represent its minimum and maximum values.
+
+### Java Code
+```java
+import java.util.Arrays;
+
+class Solution {
+    public int findMinDiff(int[] arr, int m) {
+        int n = arr.length;
+
+        if (m <= 0 || n == 0 || m > n) {
+            return 0;
+        }
+
+        Arrays.sort(arr);
+        int minDiff = Integer.MAX_VALUE;
+
+        for (int i = 0; i + m - 1 < n; i++) {
+            int diff = arr[i + m - 1] - arr[i];
+            minDiff = Math.min(minDiff, diff);
+        }
+
+        return minDiff;
+    }
+}
+```
+
+### Example
+**Input**
+```text
+arr = [7, 3, 2, 4, 9, 12, 56]
+m = 3
+```
+
+**Output**
+```text
+2
+```
+
+**Explanation**
+
+After sorting, the array becomes `[2, 3, 4, 7, 9, 12, 56]`.
+
+Selecting packets containing `2`, `3`, and `4` chocolates gives:
+
+Minimum difference = `4 - 2 = 2`.
+
+### Algorithm
+1. Find the number of packets `n`.
+2. Handle invalid inputs.
+3. Sort the array.
+4. Initialize `minDiff` to `Integer.MAX_VALUE`.
+5. Traverse all windows of size `m`.
+6. Calculate `arr[i + m - 1] - arr[i]`.
+7. Update `minDiff` with the smallest difference.
+8. Return `minDiff`.
+
+### Complexity Analysis
+- **Time Complexity:** `O(n log n)` — Sorting takes `O(n log n)`, followed by a linear traversal.
+- **Auxiliary Space Complexity:** Depends on the sorting implementation; the traversal itself uses `O(1)` extra space.
+
+### Key Takeaway
+Sorting the packets and checking every consecutive window of size `m` efficiently minimizes the difference between the maximum and minimum chocolates distributed.
+
+
+# Best Time to Buy and Sell Stock
+
+## Problem Statement
+You are given an array `prices[]`, where `prices[i]` represents the price of a stock on the `i-th` day.
+
+Choose one day to buy the stock and a later day to sell it to maximize profit.
+
+Return the maximum profit possible. If no profit can be made, return `0`.
+
+## Optimal Approach: Single Pass
+
+### Approach
+1. Initialize `minPrice` to the maximum possible integer value.
+2. Initialize `maxProfit` to `0`.
+3. Traverse the array once.
+4. Update `minPrice` whenever a lower stock price is found.
+5. Calculate the profit by subtracting `minPrice` from the current price.
+6. Update `maxProfit` whenever a higher profit is found.
+7. Return `maxProfit`.
+
+This approach tracks the best buying price and calculates the profit from selling on each day.
+
+### Java Code
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
+            }
+
+            int profit = prices[i] - minPrice;
+
+            if (profit > maxProfit) {
+                maxProfit = profit;
+            }
+        }
+
+        return maxProfit;
+    }
+}
+```
+
+### Example
+**Input**
+```text
+prices = [7, 1, 5, 3, 6, 4]
+```
+
+**Output**
+```text
+5
+```
+
+**Explanation**
+
+- Buy on day 2 at a price of `1`.
+- Sell on day 5 at a price of `6`.
+- Maximum profit = `6 - 1 = 5`.
+
+### Algorithm
+1. Initialize `minPrice = Integer.MAX_VALUE`.
+2. Initialize `maxProfit = 0`.
+3. Traverse each price in the array.
+4. Update the minimum price seen so far.
+5. Calculate the current profit.
+6. Update the maximum profit if the current profit is larger.
+7. Return the maximum profit.
+
+### Complexity Analysis
+- **Time Complexity:** `O(n)` — The array is traversed only once.
+- **Auxiliary Space Complexity:** `O(1)` — Only a constant number of variables are used.
+
+### Key Takeaway
+Tracking the minimum stock price seen so far allows us to calculate the maximum possible profit in a single traversal, without using nested loops or additional arrays.
 
 ---
 ⭐ Star this repo if you are also doing Striver Sheet!
