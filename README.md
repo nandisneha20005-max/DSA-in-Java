@@ -449,6 +449,75 @@ prices = [7, 1, 5, 3, 6, 4]
 ### Key Takeaway
 Tracking the minimum stock price seen so far allows us to calculate the maximum possible profit in a single traversal, without using nested loops or additional arrays.
 
+
+### Trapping Rain Water — Optimal Approach
+
+**Problem:** Given an array `height` representing an elevation map where each bar has a width of 1, calculate how much rainwater can be trapped between the bars.
+
+**Approach: Two Pointers**
+
+The optimal approach uses two pointers, `left` and `right`, along with `leftMax` and `rightMax` to track the maximum heights encountered from both sides. This avoids the need for extra arrays to store prefix and suffix maximums.
+
+**Algorithm:**
+1. Initialize `left` at the beginning and `right` at the end of the array.
+2. Initialize `leftMax`, `rightMax`, and `water` to zero.
+3. While `left < right`, compare the heights at both pointers.
+4. If `height[left] < height[right]`, process the left side:
+   - Update `leftMax` if the current height is greater than or equal to it.
+   - Otherwise, add `leftMax - height[left]` to the trapped water.
+   - Move the left pointer forward.
+5. Otherwise, process the right side:
+   - Update `rightMax` if the current height is greater than or equal to it.
+   - Otherwise, add `rightMax - height[right]` to the trapped water.
+   - Move the right pointer backward.
+6. Return the total trapped water.
+
+**Example:**
+- Input: `height = [4, 2, 0, 3, 2, 5]`
+- Output: `9`
+- Explanation: The elevation map traps a total of 9 units of rainwater.
+
+**Complexity Analysis:**
+- **Time Complexity:** \(O(n)\), where \(n\) is the number of bars.
+- **Space Complexity:** \(O(1)\), because only constant extra space is used.
+
+**Key Concepts:** Two pointers, array traversal, maximum tracking, and space optimization.
+
+
+
+
+### Maximum Product Subarray — Optimal Approach
+
+**Problem:** Given an integer array `nums`, find a non-empty contiguous subarray that has the largest product and return that product.
+
+**Approach: Dynamic Programming (Maximum and Minimum Tracking)**
+
+The optimal approach maintains two variables, `maxProduct` and `minProduct`, representing the maximum and minimum products of subarrays ending at the current index.
+
+Tracking both values is necessary because multiplying a negative number by the minimum negative product can produce a new maximum positive product.
+
+**Algorithm:**
+1. Initialize `maxProduct`, `minProduct`, and `result` with the first array element.
+2. Traverse the array from the second element onward.
+3. If the current element is negative, swap `maxProduct` and `minProduct`.
+4. Update `maxProduct` as the maximum of the current element and `maxProduct * num`.
+5. Update `minProduct` as the minimum of the current element and `minProduct * num`.
+6. Update `result` with the maximum value between `result` and `maxProduct`.
+7. Return `result`.
+
+**Example:**
+- Input: `nums = [2, 3, -2, 4]`
+- Output: `6`
+- Explanation: The contiguous subarray `[2, 3]` produces the maximum product, which is `6`.
+
+**Complexity Analysis:**
+- **Time Complexity:** \(O(n)\), where \(n\) is the length of the array.
+- **Space Complexity:** \(O(1)\), because only a constant number of variables are used.
+
+**Key Concepts:** Dynamic programming, maximum and minimum tracking, negative numbers, and space optimization.
+
+
+
 ---
 ⭐ Star this repo if you are also doing Striver Sheet!
 #DSA #Java #StriverSheet #100DaysOfCode
