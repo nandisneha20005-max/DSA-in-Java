@@ -1,0 +1,41 @@
+import java.util.Arrays;
+
+public class ValidAnagram {
+
+    // Best Approach - O(n) - Frequency Count
+    public static boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        int[] freq = new int[26]; // a-z er jonno
+
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i) - 'a']++;
+            freq[t.charAt(i) - 'a']--;
+        }
+
+        for (int count : freq) {
+            if (count != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Alternative - Easy to understand (Sorting diye)
+    public static boolean isAnagramSorting(String s, String t) {
+        if (s.length() != t.length()) return false;
+        char[] sArr = s.toCharArray();
+        char[] tArr = t.toCharArray();
+        Arrays.sort(sArr);
+        Arrays.sort(tArr);
+        return Arrays.equals(sArr, tArr);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("anagram & nagaram -> " + isAnagram("anagram", "nagaram")); // true
+        System.out.println("rat & car -> " + isAnagram("rat", "car")); // false
+        System.out.println("listen & silent -> " + isAnagram("listen", "silent")); // true
+    }
+}
