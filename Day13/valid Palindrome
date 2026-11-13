@@ -1,4 +1,4 @@
-// Palindrome Check - String & Number
+// Palindrome Check - String 
 public class Palindrome {
 
     // Method 1: String Palindrome
