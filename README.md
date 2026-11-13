@@ -1,524 +1,565 @@
-# DSA in Java - 375 Days Challenge 🚀
+# 🚀 Data Structures and Algorithms in Java | 375 Days Challenge
 
-Hi, I'm Sneha Nandi! This is my daily DSA practice for placement.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Focus-DSA-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Challenge-375%20Days-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge" />
+</p>
 
-### 🎯 Goal
-- 375 Problems in 375 Days
-- Language: Java
-- Started: Oct 2026
-## 📅 Progress Tracker - 375 Days Challenge
-| Day | Topic | Problems | Status | Link |
-| :--- | :--- | :--- | :--- | :--- |
-| Day 01 | Arrays - Easy | Largest Element in Array | ✅ Done | [Code](./Day01_Largest_Element.java) |
-| Day 02 | Arrays - Easy | Second Largest & Second Smallest | ✅ Done | [Code](./Day02_Second_Largest_Smallest.java) |
-| Day 03 | Arrays - Easy | 1. Check if Array is Sorted<br>2. Remove Duplicates (LC 26) | ✅ Done | [Code](./Day03_CheckSorted_RemoveDuplicates.java) |
-| Day 04 | Arrays - Easy | 1. Move Zeros to End (LC 283)<br>2. Union of Two Sorted Arrays | ✅ Done | [Code](./Day04_MoveZeroes_283.java) |
-| Day 05 | Sliding Window & Two Pointers | 1. Trapping Rain Water (LC 42)<br>2. Longest Substring Without Repeating (LC 3) | ✅ Done | [Code](./Day05_Trapping_Rainwater.java) |
-| 06 | 2026-10-06 | 152 | Maximum Product Subarray | Arrays, DP | Medium | O(n) | ✅ Solved |
-| 06 | 2026-10-06 | 153 | Find Minimum in Rotated Sorted Array | Binary Search | Medium | O(log n) | ✅ Solved |
-| 07 | 2026-10-07 |Arrays_Medium| 3 sum problem |solved |
-| 08 | Container With Most Water |Two Pointers (Greedy) |O(n) | O(1) | ✅ |
-| 08 | Kth Smallest Element |Min-Heap / QuickSelect|O(n log k) | O(k) | ✅ |
-| 09 | Maximum and minimum element in an Array | comparing in pairs | o(n) | ✅ solved |
-| 09 | Reverse an Array |  Single Pointer | o(n) | ✅ solved |
+<p align="center">
+  <b>Learn • Practice • Optimize • Improve</b>
+</p>
 
-**Total Solved: 2 (Day 06)**
-**Progress: 5 / 375 Days Completed**
-**Total Progress: 4 / 375 Days Completed (1.06%)**
-
-### 📂 Structure
-Each Day folder contains Java solutions with pattern notes.
-### Day 01 - Largest Element in Array
-
-#### Problem: Find the Largest Element
-
-**Logic (Bangla te):**
-Ekta variable `max` nebo, prothom e `arr[0]` diye initialize korbo.
-Tarpor puro array loop korbo. Jodi `arr[i] > max` hoy, tahole `max = arr[i]` kore debo.
-Sesh e `max` tai largest.
-
-**Example:**
-`arr = [2, 5, 1, 3, 0]`
-max=2 -> 5>2 -> max=5 -> 1>5? No -> 3>5? No -> 0>5? No -> Ans 5
-
-**Complexity:**
-- Time: O(n)
-- Space: O(1)
+<p align="center">
+  A consistent journey towards mastering Data Structures and Algorithms using Java.
+</p>
 
 ---
 
-### Day 02 - Second Largest & Second Smallest
+## 📌 Table of Contents
 
-#### 1. Second Largest Element
-
-**Logic (Bangla te):**
-2 to variable lagbe: `largest` and `secondLargest`.
-Prothom e `largest = arr[0]`, `secondLargest = -1` (or MIN_VALUE)
-
-Loop chalabo:
-1. Jodi `arr[i] > largest` -> mane notun largest pelam.
-   Tahole ager largest ta second hoye jabe: `secondLargest = largest`, `largest = arr[i]`
-2. Else if `arr[i] < largest && arr[i] > secondLargest` -> mane largest er theke choto kintu second er theke boro, so second update.
-
-**Example:**
-`arr = [1, 2, 4, 7, 5]`
-largest=1, second=-1
-2>1 -> second=1, largest=2
-4>2 -> second=2, largest=4
-7>4 -> second=4, largest=7
-7>7? No, but 7<7? No -> skip (duplicate)
-5<7 && 5>4 -> second=5 -> Ans 5
-
-**Complexity:**
-- Time: O(n)
-- Space: O(1)
-
-#### 2. Second Smallest Element (Bonus)
-
-**Logic:** Same, just ulta. `smallest` track korbo, tar theke boro kintu sob theke choto ta second.
+- [About the Repository](#-about-the-repository)
+- [My Objective](#-my-objective)
+- [Technologies and Tools](#-technologies-and-tools)
+- [Learning Roadmap](#-learning-roadmap)
+- [375 Days Challenge Progress](#-375-days-challenge-progress)
+- [Problem-Solving Approach](#-problem-solving-approach)
+- [Problem Catalogue](#-problem-catalogue)
+- [Repository Structure](#-repository-structure)
+- [How to Run the Programs](#-how-to-run-the-programs)
+- [Learning Outcomes](#-learning-outcomes)
+- [Future Goals](#-future-goals)
+- [Connect With Me](#-connect-with-me)
 
 ---
 
-### Day 03 - Arrays (Easy)
-
-#### 1. Check if Array is Sorted
-**Logic:** `i=1` theke loop, check `arr[i] >= arr[i-1]`. Ekbar fail korlei `false`.
-**Example:** [1,2,2,3] -> Yes sorted
-**Complexity:** O(n), O(1)
-
-#### 2. Remove Duplicates from Sorted Array (LeetCode 26)
-**Logic:** Two Pointer. `i=0` unique rakhar jayga, `j=1` diye scan. `arr[j]!=arr[i]` hole `i++` kore `arr[i]=arr[j]`.
-**Example:** [1,1,2,2,3] -> [1,2,3] -> return 3
-**Complexity:** O(n), O(1)
+## 👩‍💻 About the Repository
 
-## 🧠 Day 04 - What I Learned Today
-- **Move Zeroes:** O(n) time, O(1) space - `j` pointer diye non-zero track kora.
-- **Union:** Two pointer diye duplicate avoid kora.
-- ## Day 05 - Trapping Rainwater & Longest Substring Without Repeating
+Welcome to my **DSA in Java** repository!
 
-### 1. Trapping Rainwater (LeetCode 42)
+I'm **Sneha Nandi**, a B.Tech student passionate about programming, problem-solving, and software development.
 
-**Logic:** We need 2 pointers: `left = 0` and `right = n-1`. And 2 variables: `leftMax = 0` and `rightMax = 0` to track max wall. `ans = 0` for water.
+This repository represents my ongoing journey of learning and mastering **Data Structures and Algorithms (DSA) using Java** through a structured 375 Days Challenge.
 
-Loop: `while(left <= right)`:
+The primary purpose of this repository is to document my daily coding practice, strengthen my programming fundamentals, and develop the ability to solve problems efficiently.
 
-1. If `height[left] < height[right]` -> left side is smaller:
-   a. If `height[left] >= leftMax` -> found new max wall, so `leftMax = height[left]`
-   b. Else `height[left] < leftMax` -> water will be trapped, so `ans += leftMax - height[left]`
-   c. `left++`
+I believe that learning Data Structures and Algorithms is not simply about finding a solution to a problem. It is about understanding the logic, exploring different approaches, optimizing performance, and writing clean and efficient code.
 
-2. Else `height[left] >= height[right]` -> right side is smaller:
-   a. If `height[right] >= rightMax` -> `rightMax = height[right]`
-   b. Else `ans += rightMax - height[right]`
-   c. `right--`
+Throughout this challenge, I practice problems from different DSA topics, analyze their complexity, and continuously improve my problem-solving techniques.
 
-**Example:** `arr = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]`
-Start `left=0, right=11, leftMax=0, rightMax=0`
-`0<1 -> left small -> height[0]=0 >= leftMax(0) -> leftMax=0, left=1`
-`1<1? No -> right side -> height[11]=1 >= rightMax(0) -> rightMax=1, right=10` ... continues -> Ans 6
+**This repository serves as my personal learning journal, coding practice archive, and placement preparation portfolio.**
 
-**Complexity:**
-- Time: O(n)
-- Space: O(1)
+---
 
-### 2. Longest Substring Without Repeating Characters (LeetCode 3)
+## 🎯 My Objective
 
-**Logic:** Sliding Window + HashSet. 2 pointers: `left = 0`, `right` will iterate. Set stores chars in current window. `maxLen = 0`
+The main objective of this 375 Days Challenge is to build a strong foundation in Data Structures and Algorithms and become confident in solving technical interview problems.
 
-Loop: `for(right=0; right < n; right++)`:
+My learning goals include:
 
-1. If `set.contains(s.charAt(right))` -> duplicate found:
-   Run while loop till duplicate removed: `set.remove(s.charAt(left))`, `left++`
-2. Else no duplicate:
-   `set.add(s.charAt(right))`
-   `maxLen = max(maxLen, right - left + 1)`
+- Mastering Data Structures and Algorithms using Java.
+- Improving logical thinking and analytical skills.
+- Understanding Brute Force, Better, and Optimal solutions.
+- Learning how to optimize algorithms.
+- Developing a strong understanding of Time and Space Complexity.
+- Practicing coding problems consistently.
+- Improving Java programming skills.
+- Preparing for technical interviews and software engineering placements.
 
-**Example:** `s = "abcabcbb"`
-`left=0, right=0, set=[]`
-`r=0, 'a' not in set -> add 'a', set=[a], maxLen=1`
-`r=1, 'b' not in set -> add 'b', set=[a,b], maxLen=2`
-`r=2, 'c' not in set -> add 'c', set=[a,b,c], maxLen=3`
-`r=3, 'a' in set? Yes -> duplicate -> remove from left: remove 'a', left=1, set=[b,c] -> now 'a' not in set -> add 'a', set=[b,c,a], maxLen=3`
-... continues -> Ans 3
+**Challenge Duration:** 375 Days  
+**Started:** October 2026  
+**Primary Language:** Java  
+**Current Status:** In Progress
 
-**Complexity:**
-- Time: O(n)
-- Space: O(n)
-- # Day 06 - Arrays & Binary Search
+---
 
-Solved 2 LeetCode problems focusing on Array manipulation and Binary Search optimization.
+## 🛠️ Technologies and Tools
 
-### 📅 Date: 6th Oct 2026
+The following technologies and platforms support my learning process.
 
-## Problems Solved
+| Technology / Tool | Purpose |
+|---|---|
+| Java | Primary programming language for implementing DSA |
+| JDK | Compiling and executing Java programs |
+| Git | Version control and tracking changes |
+| GitHub | Maintaining and documenting coding progress |
+| LeetCode | Practicing algorithmic problems |
+| VS Code | Writing, debugging, and managing Java programs |
 
-### 1. LeetCode 152 - Maximum Product Subarray [Medium]
-- **Approach:** Dynamic Tracking (Kadane's Variant)
-- **Key Logic:** Maintain both `max` and `min` product ending at current index. When we encounter a negative number, swap max and min because negative * negative = positive.
-- **Complexity:**
-    - Time: `O(n)`
-    - Space: `O(1)`
-- **Performance:** 192/192 Tests Passed | 2ms (70.49%) | 47.02 MB (87.32%)
-- **File:** `152-Maximum-Product-Subarray/Solution.java`
+### Programming Language
 
-### 2. LeetCode 153 - Find Minimum in Rotated Sorted Array [Medium]
-- **Approach:** Binary Search
-- **Key Logic:** If `nums[mid] > nums[right]`, minimum lies on the right side (`left = mid + 1`). Else, it lies on the left including mid (`right = mid`).
-- **Complexity:**
-    - Time: `O(log n)`
-    - Space: `O(1)`
-- **Performance:** 0ms (100%) | Runtime Beats 100%
-- **File:** `153-Min-in-Rotated-Sorted-Array/Solution.java`
+**Java**
 
-## Learnings
-- Handling negatives in product problems requires tracking both min and max.
-- Rotated array minimum can be found without linear scan using modified binary search.
-## 📅 Day 08 – DSA Practice
+Java is my primary language for implementing different data structures and algorithms. I use Java to understand programming concepts, develop optimized solutions, and improve my coding skills.
 
-### Problems Solved
+---
 
-#### 1. Container With Most Water
+## 📚 Learning Roadmap
 
-* **Approach:** Two Pointer
-* **Time Complexity:** `O(n)`
-* **Space Complexity:** `O(1)`
-* **Key Concept:** Two Pointers, Greedy Approach
+This repository follows a progressive learning approach, starting with fundamental programming concepts and gradually moving towards advanced algorithmic techniques.
 
-The solution uses two pointers starting from both ends of the array. At every step, the area is calculated and the pointer corresponding to the shorter height is moved inward to find a potentially larger container.
+### 1. Arrays
 
-#### 2. Kth Smallest Element
+Arrays are one of the fundamental data structures used to store elements of the same type in contiguous memory locations.
 
-* **Approach:** Quickselect
-* **Average Time Complexity:** `O(n)`
-* **Worst-Case Time Complexity:** `O(n²)`
-* **Space Complexity:** `O(1)`
-* **Key Concept:** Partitioning, Quickselect
+Topics and problems include:
 
-The solution uses the Quickselect algorithm to partition the array around a pivot and searches only the relevant portion instead of completely sorting the array.
+- Array Traversal
+- Largest and Smallest Element
+- Second Largest Element
+- Check if an Array is Sorted
+- Remove Duplicates
+- Move Zeroes
+- Array Rotation
+- Next Permutation
+- Product of Array Except Self
+- Maximum Product Subarray
+- Best Time to Buy and Sell Stock
+- Chocolate Distribution Problem
 
-### 🧠 Key Learnings
+### 2. Searching and Sorting
 
-* Practiced the **Two Pointer technique** for optimizing array problems.
-* Learned how to achieve `O(n)` time for the Container With Most Water problem.
-* Understood the **Quickselect algorithm** for finding the kth smallest element efficiently.
-* Improved understanding of **in-place algorithms** and space optimization.
+Searching and sorting algorithms are essential for efficiently locating and organizing data.
 
-**Day 08 completed ✅**
+Topics include:
 
-## 📅 Day 09 – DSA Practice
+- Linear Search
+- Binary Search
+- Search in Rotated Sorted Array
+- Find Minimum in Rotated Sorted Array
+- Sorting Techniques
+- Quickselect
+- Partitioning Techniques
 
+### 3. Two Pointer Technique
 
-### Problems Solved
-#### 1. Maximum and Minimum element in an Array
+The Two Pointer technique uses two indices to process data efficiently, often reducing unnecessary nested loops.
 
-* **Approach:** Compairing in pairs
-* **Time Complexity:** `O(n)`
-* **Space Complexity:** `O(1)`
-* **Key Concept:** Optimal Approach
+Problems include:
 
-#### 2.Array Reverse
+- Reverse an Array
+- Two Sum in Sorted Array
+- Three Sum
+- Container With Most Water
+- Trapping Rain Water
+- Union of Two Sorted Arrays
 
-* **Approach:** Single pointer
-*Time Complexity:** o(n)
-* **Space Complexity:** `O(1)`
-* **Key Concept:** iterate over the first half and then swapping 
+### 4. Sliding Window
 
-### 🧠 Key Learnings
+Sliding Window is an optimization technique used to solve problems involving continuous subarrays or substrings.
 
-* Practiced the **Single pointer technique** for optimizing array problems.
-* Learned how to achieve `O(n)` time for the Mim and max element finding in an array
-** Day 09 Completed✅  **
+Topics include:
 
+- Fixed Size Sliding Window
+- Variable Size Sliding Window
+- Maximum and Minimum Window
+- Longest Substring Without Repeating Characters
+- Subarray and Substring Problems
 
-  ** Day 10 problems**
-###1 : Contains Duplicate — Optimal Approach
+### 5. Hashing
 
-**Problem:** Given an integer array `nums`, return `true` if any value appears at least twice in the array. Return `false` if every element is distinct.
+Hashing helps improve searching and frequency-based operations using HashMap and HashSet.
 
-**Approach: HashSet**
+Topics include:
 
-The optimal approach uses a HashSet to detect duplicate elements efficiently. A HashSet stores unique elements and provides average \(O(1)\) time complexity for search and insertion.
+- HashMap
+- HashSet
+- Frequency Counting
+- Duplicate Detection
+- Subarray Sum Problems
+- Efficient Element Lookup
 
-**Algorithm:**
-1. Initialize an empty HashSet.
-2. Iterate through each element of the array.
-3. Check whether the current element already exists in the set.
-4. If it exists, return `true` because a duplicate has been found.
-5. Otherwise, insert the element into the set.
-6. If the entire array is traversed without finding a duplicate, return `false`.
+### 6. Linked Lists
 
-**Example:**
+Linked Lists are dynamic data structures in which elements are connected using references.
 
-- Input: `nums = [1, 2, 3, 1]`
-- Output: `true`
-- Explanation: The element `1` appears twice in the array.
+Planned topics:
 
-**Complexity Analysis:**
-- **Time Complexity:** \(O(n)\) average case, where \(n\) is the length of the array.
-- **Space Complexity:** \(O(n)\), as the HashSet may store all array elements.
+- Singly Linked List
+- Doubly Linked List
+- Reversing a Linked List
+- Detecting Cycles
+- Finding the Middle Node
+- Merging Sorted Linked Lists
 
-**Key Concept:** Hashing using Java's `HashSet` for efficient duplicate detection.
+### 7. Stacks and Queues
 
+These data structures are important for managing data according to specific processing orders.
 
+Planned topics:
 
-### 2  :Next Permutation — Optimal Approach
+- Stack Implementation
+- Queue Implementation
+- Circular Queue
+- Next Greater Element
+- Valid Parentheses
+- Monotonic Stack
 
-**Problem:** Given an array of integers, rearrange the numbers into the lexicographically next greater permutation. If no greater permutation exists, rearrange the array into its smallest permutation in ascending order.
+### 8. Recursion and Backtracking
 
-**Approach: Breakpoint, Swap, and Reverse**
+These techniques help solve problems by breaking them into smaller subproblems and exploring possible solutions.
 
-The optimal approach modifies the array in place using three main steps. It avoids generating all possible permutations and achieves linear time complexity.
+Planned topics:
 
-**Algorithm:**
-1. Start from the second-last index and find the first element smaller than its next element. This is called the breakpoint.
-2. If a breakpoint exists, search from the right to find the first element greater than the breakpoint element.
-3. Swap the breakpoint element with the next greater element.
-4. Reverse the suffix after the breakpoint to arrange it in ascending order.
-5. If no breakpoint exists, reverse the entire array to obtain the smallest permutation.
+- Basic Recursion
+- Factorial and Fibonacci
+- Subsets
+- Permutations
+- Combination Sum
+- N-Queens Problem
 
-**Example:**
+### 9. Trees and Binary Search Trees
 
-- Input: `nums = [1, 2, 3]`
-- Output: `nums = [1, 3, 2]`
-- Explanation: `[1, 3, 2]` is the next lexicographically greater permutation after `[1, 2, 3]`.
+Trees are hierarchical data structures used in many important programming and algorithmic problems.
 
-**Complexity Analysis:**
-- **Time Complexity:** \(O(n)\), where \(n\) is the length of the array.
-- **Space Complexity:** \(O(1)\), because the array is modified in place using constant extra space.
+Planned topics:
 
-**Key Concepts:** Array manipulation, two pointers, swapping, reversing, and lexicographical ordering.
+- Binary Trees
+- Tree Traversals
+- Inorder, Preorder, and Postorder
+- Level Order Traversal
+- Binary Search Trees
+- Height and Diameter of Trees
 
-**Day 10 Completed✅   **
-# Chocolate Distribution Problem
+### 10. Heaps and Priority Queues
 
-## Problem Statement
-Given an array `arr[]` where each element represents the number of chocolates in a packet, and an integer `m` representing the number of students, distribute one packet to each student such that the difference between the maximum and minimum number of chocolates is minimized.
+Heaps are specialized tree-based structures used for efficient minimum and maximum element operations.
 
-Return the minimum possible difference.
+Planned topics:
 
-## Optimal Approach: Sorting + Sliding Window
+- Min Heap
+- Max Heap
+- Heap Operations
+- Heap Sort
+- Kth Largest and Smallest Element
+- Priority Queue
 
-### Approach
-1. Sort the array in ascending order.
-2. Consider every group of `m` consecutive packets.
-3. Calculate the difference between the last and first elements of each group.
-4. Update the minimum difference whenever a smaller difference is found.
-5. Return the minimum difference.
+### 11. Graphs
 
-Since the array is sorted, the first and last elements of each group represent its minimum and maximum values.
+Graphs represent relationships between different objects using vertices and edges.
 
-### Java Code
-```java
-import java.util.Arrays;
+Planned topics:
 
-class Solution {
-    public int findMinDiff(int[] arr, int m) {
-        int n = arr.length;
+- Graph Representation
+- Breadth First Search (BFS)
+- Depth First Search (DFS)
+- Connected Components
+- Cycle Detection
+- Shortest Path Algorithms
+- Minimum Spanning Tree
 
-        if (m <= 0 || n == 0 || m > n) {
-            return 0;
-        }
+### 12. Greedy Algorithms
 
-        Arrays.sort(arr);
-        int minDiff = Integer.MAX_VALUE;
+Greedy algorithms solve problems by making locally optimal choices at each step.
 
-        for (int i = 0; i + m - 1 < n; i++) {
-            int diff = arr[i + m - 1] - arr[i];
-            minDiff = Math.min(minDiff, diff);
-        }
+Planned topics:
 
-        return minDiff;
-    }
-}
-```
+- Activity Selection
+- Fractional Knapsack
+- Job Sequencing
+- Interval Problems
+- Minimum Platforms
 
-### Example
-**Input**
-```text
-arr = [7, 3, 2, 4, 9, 12, 56]
-m = 3
-```
+### 13. Dynamic Programming
 
-**Output**
-```text
-2
-```
+Dynamic Programming solves complex problems by storing and reusing results of overlapping subproblems.
 
-**Explanation**
+Planned topics:
 
-After sorting, the array becomes `[2, 3, 4, 7, 9, 12, 56]`.
+- Memoization
+- Tabulation
+- Fibonacci
+- Climbing Stairs
+- House Robber
+- Longest Common Subsequence
+- Knapsack Problems
+- Grid-Based DP
 
-Selecting packets containing `2`, `3`, and `4` chocolates gives:
+*The roadmap represents my learning plan. Topics will be marked as completed as I implement and document their solutions.*
 
-Minimum difference = `4 - 2 = 2`.
+---
 
-### Algorithm
-1. Find the number of packets `n`.
-2. Handle invalid inputs.
-3. Sort the array.
-4. Initialize `minDiff` to `Integer.MAX_VALUE`.
-5. Traverse all windows of size `m`.
-6. Calculate `arr[i + m - 1] - arr[i]`.
-7. Update `minDiff` with the smallest difference.
-8. Return `minDiff`.
+## 📅 375 Days Challenge Progress
+
+Consistency is the foundation of this challenge. I maintain separate daily folders to organize solutions and track my learning progress.
+
+### Daily Progress Tracker
+
+| Day | Focus Area | Problems / Concepts | Progress |
+|---|---|---|---|
+| Day 01 | Arrays | Fundamental array problems | Completed |
+| Day 02 | Arrays | Second Largest and Second Smallest | Completed |
+| Day 03 | Arrays | Check Sorted Array, Remove Duplicates | Completed |
+| Day 04 | Arrays | Move Zeroes, Union of Two Sorted Arrays | Completed |
+| Day 05 | Two Pointers / Sliding Window | Trapping Rain Water, Longest Substring Without Repeating Characters | Completed |
+| Day 06 | Arrays / Binary Search | Maximum Product Subarray, Minimum in Rotated Sorted Array | Completed |
+| Day 07 | Arrays | 3 Sum, Product of Array Except Self | Completed |
+| Day 08 | Two Pointers / Selection | Container With Most Water, Kth Smallest Element | Completed |
+| Day 09 | DSA Practice | Daily practice solutions | See folder |
+| Day 10 | Arrays / Hashing | Contains Duplicate, Next Permutation | Completed |
+| Day 11 | DSA Practice | Daily practice solutions | See folder |
+| Day 12 | DSA Practice | Daily practice solutions | See folder |
+| Day 13 | DSA Practice | Daily practice solutions | See folder |
+| Day 14–375 | Upcoming | New problems and advanced concepts | Upcoming |
+
+### Progress Checklist
+
+- [x] Begin the 375 Days Challenge.
+- [x] Practice fundamental array problems.
+- [x] Learn Two Pointer techniques.
+- [x] Practice Sliding Window.
+- [x] Learn Binary Search.
+- [x] Practice Hashing.
+- [ ] Complete all 375 days.
+- [ ] Master advanced DSA concepts.
+- [ ] Strengthen technical interview preparation.
+
+**Note:** Daily entries and problem counts will be updated as the repository grows. A folder's existence does not automatically mean all its problems are completed.
+
+---
+
+## 🧠 Problem-Solving Approach
+
+I follow a structured problem-solving methodology to understand the problem, explore possible solutions, and improve algorithmic efficiency.
+
+Whenever applicable, I try to understand three approaches.
+
+### 1. Brute Force Approach
+
+The Brute Force approach is the simplest straightforward method of solving a problem.
+
+**My focus:**
+- Understand the problem statement.
+- Develop the basic logic.
+- Explore all possible combinations or solutions.
+- Identify unnecessary operations and inefficiencies.
+
+### 2. Better Approach
+
+The Better approach improves upon the Brute Force solution by reducing unnecessary computations.
+
+**My focus:**
+- Optimize the initial logic.
+- Choose appropriate data structures.
+- Reduce redundant operations.
+- Improve overall performance.
+
+### 3. Optimal Approach
+
+The Optimal approach aims to achieve the best practical time and space complexity for the given problem constraints.
+
+**My focus:**
+- Apply efficient algorithms and techniques.
+- Minimize unnecessary iterations.
+- Optimize auxiliary space.
+- Handle edge cases and large inputs.
 
 ### Complexity Analysis
-- **Time Complexity:** `O(n log n)` — Sorting takes `O(n log n)`, followed by a linear traversal.
-- **Auxiliary Space Complexity:** Depends on the sorting implementation; the traversal itself uses `O(1)` extra space.
 
-### Key Takeaway
-Sorting the packets and checking every consecutive window of size `m` efficiently minimizes the difference between the maximum and minimum chocolates distributed.
+For every solution, I aim to understand:
 
+**Time Complexity:** Measures how the execution time of an algorithm grows with input size.
 
-# Best Time to Buy and Sell Stock
+**Space Complexity:** Measures how much additional memory an algorithm requires as the input size increases.
 
-## Problem Statement
-You are given an array `prices[]`, where `prices[i]` represents the price of a stock on the `i-th` day.
+Common complexity classes:
 
-Choose one day to buy the stock and a later day to sell it to maximize profit.
-
-Return the maximum profit possible. If no profit can be made, return `0`.
-
-## Optimal Approach: Single Pass
-
-### Approach
-1. Initialize `minPrice` to the maximum possible integer value.
-2. Initialize `maxProfit` to `0`.
-3. Traverse the array once.
-4. Update `minPrice` whenever a lower stock price is found.
-5. Calculate the profit by subtracting `minPrice` from the current price.
-6. Update `maxProfit` whenever a higher profit is found.
-7. Return `maxProfit`.
-
-This approach tracks the best buying price and calculates the profit from selling on each day.
-
-### Java Code
-```java
-class Solution {
-    public int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
-
-        for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < minPrice) {
-                minPrice = prices[i];
-            }
-
-            int profit = prices[i] - minPrice;
-
-            if (profit > maxProfit) {
-                maxProfit = profit;
-            }
-        }
-
-        return maxProfit;
-    }
-}
-```
-
-### Example
-**Input**
-```text
-prices = [7, 1, 5, 3, 6, 4]
-```
-
-**Output**
-```text
-5
-```
-
-**Explanation**
-
-- Buy on day 2 at a price of `1`.
-- Sell on day 5 at a price of `6`.
-- Maximum profit = `6 - 1 = 5`.
-
-### Algorithm
-1. Initialize `minPrice = Integer.MAX_VALUE`.
-2. Initialize `maxProfit = 0`.
-3. Traverse each price in the array.
-4. Update the minimum price seen so far.
-5. Calculate the current profit.
-6. Update the maximum profit if the current profit is larger.
-7. Return the maximum profit.
-
-### Complexity Analysis
-- **Time Complexity:** `O(n)` — The array is traversed only once.
-- **Auxiliary Space Complexity:** `O(1)` — Only a constant number of variables are used.
-
-### Key Takeaway
-Tracking the minimum stock price seen so far allows us to calculate the maximum possible profit in a single traversal, without using nested loops or additional arrays.
-
-
-### Trapping Rain Water — Optimal Approach
-
-**Problem:** Given an array `height` representing an elevation map where each bar has a width of 1, calculate how much rainwater can be trapped between the bars.
-
-**Approach: Two Pointers**
-
-The optimal approach uses two pointers, `left` and `right`, along with `leftMax` and `rightMax` to track the maximum heights encountered from both sides. This avoids the need for extra arrays to store prefix and suffix maximums.
-
-**Algorithm:**
-1. Initialize `left` at the beginning and `right` at the end of the array.
-2. Initialize `leftMax`, `rightMax`, and `water` to zero.
-3. While `left < right`, compare the heights at both pointers.
-4. If `height[left] < height[right]`, process the left side:
-   - Update `leftMax` if the current height is greater than or equal to it.
-   - Otherwise, add `leftMax - height[left]` to the trapped water.
-   - Move the left pointer forward.
-5. Otherwise, process the right side:
-   - Update `rightMax` if the current height is greater than or equal to it.
-   - Otherwise, add `rightMax - height[right]` to the trapped water.
-   - Move the right pointer backward.
-6. Return the total trapped water.
-
-**Example:**
-- Input: `height = [4, 2, 0, 3, 2, 5]`
-- Output: `9`
-- Explanation: The elevation map traps a total of 9 units of rainwater.
-
-**Complexity Analysis:**
-- **Time Complexity:** \(O(n)\), where \(n\) is the number of bars.
-- **Space Complexity:** \(O(1)\), because only constant extra space is used.
-
-**Key Concepts:** Two pointers, array traversal, maximum tracking, and space optimization.
-
-
-
-
-### Maximum Product Subarray — Optimal Approach
-
-**Problem:** Given an integer array `nums`, find a non-empty contiguous subarray that has the largest product and return that product.
-
-**Approach: Dynamic Programming (Maximum and Minimum Tracking)**
-
-The optimal approach maintains two variables, `maxProduct` and `minProduct`, representing the maximum and minimum products of subarrays ending at the current index.
-
-Tracking both values is necessary because multiplying a negative number by the minimum negative product can produce a new maximum positive product.
-
-**Algorithm:**
-1. Initialize `maxProduct`, `minProduct`, and `result` with the first array element.
-2. Traverse the array from the second element onward.
-3. If the current element is negative, swap `maxProduct` and `minProduct`.
-4. Update `maxProduct` as the maximum of the current element and `maxProduct * num`.
-5. Update `minProduct` as the minimum of the current element and `minProduct * num`.
-6. Update `result` with the maximum value between `result` and `maxProduct`.
-7. Return `result`.
-
-**Example:**
-- Input: `nums = [2, 3, -2, 4]`
-- Output: `6`
-- Explanation: The contiguous subarray `[2, 3]` produces the maximum product, which is `6`.
-
-**Complexity Analysis:**
-- **Time Complexity:** \(O(n)\), where \(n\) is the length of the array.
-- **Space Complexity:** \(O(1)\), because only a constant number of variables are used.
-
-**Key Concepts:** Dynamic programming, maximum and minimum tracking, negative numbers, and space optimization.
-
-
+| Complexity | Meaning |
+|---|---|
+| O(1) | Constant Time |
+| O(log n) | Logarithmic Time |
+| O(n) | Linear Time |
+| O(n log n) | Linearithmic Time |
+| O(n²) | Quadratic Time |
+| O(2ⁿ) | Exponential Time |
 
 ---
-⭐ Star this repo if you are also doing Striver Sheet!
-#DSA #Java #StriverSheet #100DaysOfCode
 
+## 🧩 Problem Catalogue
+
+Below are selected problems from my practice journey, along with their commonly used optimal techniques and expected complexities.
+
+| Problem | Technique | Time Complexity | Space Complexity |
+|---|---|---|---|
+| Largest Element in Array | Linear Traversal | O(n) | O(1) |
+| Second Largest Element | Single Traversal | O(n) | O(1) |
+| Check if Array is Sorted | Linear Traversal | O(n) | O(1) |
+| Remove Duplicates | Two Pointers | O(n) | O(1) |
+| Move Zeroes | Two Pointers | O(n) | O(1) |
+| Union of Two Sorted Arrays | Two Pointers | O(n + m) | O(n + m) |
+| Trapping Rain Water | Two Pointers | O(n) | O(1) |
+| Longest Substring Without Repeating Characters | Sliding Window + HashSet | O(n) average | O(n) |
+| Maximum Product Subarray | Dynamic Tracking | O(n) | O(1) |
+| Find Minimum in Rotated Sorted Array | Binary Search | O(log n) | O(1) |
+| 3 Sum | Sorting + Two Pointers | O(n²) | O(1) auxiliary, excluding sorting |
+| Product of Array Except Self | Prefix and Suffix Products | O(n) | O(1) auxiliary, excluding output |
+| Container With Most Water | Two Pointers | O(n) | O(1) |
+| Kth Smallest Element | Quickselect | O(n) average | O(1) auxiliary |
+| Contains Duplicate | HashSet | O(n) average | O(n) |
+| Next Permutation | Breakpoint + Reverse | O(n) | O(1) |
+| Chocolate Distribution | Sorting + Sliding Window | O(n log n) | Depends on sorting |
+| Best Time to Buy and Sell Stock | Single Traversal | O(n) | O(1) |
+
+*Complexities describe standard implementations and may vary depending on the exact code, sorting method, and auxiliary data structures.*
+
+---
+
+## 📂 Repository Structure
+
+The repository is organized into individual daily folders to make the learning journey easy to navigate.
+
+```text
+DSA-in-Java/
+│
+├── Day01/
+├── Day02/
+├── Day03_CheckSorted_RemoveDuplicates/
+│
+├── Day04_MoveZeroes_283.java
+├── Day04_Union_Of_Two_Sorted.java
+│
+├── Day05_Longest_Substring_without_Repeating/
+├── Day_05_Trapping_Rainwater/
+│
+├── Day06/
+├── Day07/
+├── Day08/
+├── Day09/
+├── Day10/
+├── Day11/
+├── Day12/
+├── Day13/
+│
+└── README.md
+```
+
+### Explore My Daily Solutions
+
+| Day | Folder / Solution |
+|---|---|
+| Day 01 | [Explore Day 01](./Day01/) |
+| Day 02 | [Explore Day 02](./Day02/) |
+| Day 03 | [Explore Day 03](./Day03_CheckSorted_RemoveDuplicates/) |
+| Day 04 | [Move Zeroes](./Day04_MoveZeroes_283.java) · [Union of Two Sorted Arrays](./Day04_Union_Of_Two_Sorted.java) |
+| Day 05 | [Longest Substring](./Day05_Longest_Substring_without_Repeating/) · [Trapping Rain Water](./Day_05_Trapping_Rainwater/) |
+| Day 06 | [Explore Day 06](./Day06/) |
+| Day 07 | [Explore Day 07](./Day07/) |
+| Day 08 | [Explore Day 08](./Day08/) |
+| Day 09 | [Explore Day 09](./Day09/) |
+| Day 10 | [Explore Day 10](./Day10/) |
+| Day 11 | [Explore Day 11](./Day11/) |
+| Day 12 | [Explore Day 12](./Day12/) |
+| Day 13 | [Explore Day 13](./Day13/) |
+
+---
+
+## 💻 How to Run the Programs
+
+You can clone this repository and execute the Java programs locally using any Java-supported IDE or terminal.
+
+### Prerequisites
+
+- Java Development Kit (JDK) installed.
+- Basic knowledge of Java syntax.
+- VS Code, IntelliJ IDEA, Eclipse, or another Java IDE.
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/nandisneha20005-max/DSA-in-Java.git
+```
+
+### Step 2: Navigate to the Repository
+
+```bash
+cd DSA-in-Java
+```
+
+### Step 3: Navigate to a Specific Day
+
+```bash
+cd Day07
+```
+
+### Step 4: Compile the Java Program
+
+```bash
+javac Solution.java
+```
+
+### Step 5: Execute the Program
+
+```bash
+java Solution
+```
+
+**Important:** Replace `Solution.java` and `Solution` with the actual filename and class name used in the selected Java program.
+
+---
+
+## 📈 Learning Outcomes
+
+Through this challenge, I aim to achieve the following:
+
+- Strong understanding of Java programming.
+- Improved logical and analytical thinking.
+- Better understanding of fundamental and advanced data structures.
+- Ability to identify appropriate algorithms for different problems.
+- Confidence in optimizing code.
+- Knowledge of time and space complexity analysis.
+- Improved debugging and coding practices.
+- Strong preparation for technical interviews.
+
+---
+
+## 🌱 Future Goals
+
+My learning journey goes beyond completing 375 days of coding practice.
+
+My future goals include:
+
+- Complete the 375 Days DSA Challenge.
+- Practice more Medium and Hard-level problems.
+- Master advanced Data Structures and Algorithms.
+- Improve Core Java knowledge.
+- Strengthen object-oriented programming concepts.
+- Build real-world Java development projects.
+- Prepare for software engineering interviews.
+- Become a confident and efficient problem solver.
+
+---
+
+## 🤝 Connect With Me
+
+I'm always interested in connecting with fellow developers, learners, and technology enthusiasts.
+
+**Sneha Nandi**  
+B.Tech Student | Java Programmer | DSA Enthusiast
+
+- **GitHub:** [nandisneha20005-max](https://github.com/nandisneha20005-max)
+- **DSA Repository:** [DSA-in-Java](https://github.com/nandisneha20005-max/DSA-in-Java)
+- **LinkedIn:** [Add your LinkedIn profile URL here](https://www.linkedin.com/)
+
+---
+
+## ⭐ Support My Journey
+
+If you find this repository helpful, please consider giving it a ⭐.
+
+Your support and feedback motivate me to keep learning, practicing, and improving every day.
+
+<p align="center">
+  <h3>Consistency Over Perfection 🚀</h3>
+  <b>One Problem. One Concept. One Day at a Time.</b>
+  <br/>
+  <i>Learning today, improving tomorrow, and building a better future.</i>
+</p>
+
+---
+
+<p align="center">
+  <b>Thank you for visiting my DSA in Java repository!</b>
+</p>
+
+**Last Updated:** November 2026
