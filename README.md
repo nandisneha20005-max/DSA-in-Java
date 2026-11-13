@@ -539,7 +539,7 @@ B.Tech Student | Java Programmer | DSA Enthusiast
 
 - **GitHub:** [nandisneha20005-max](https://github.com/nandisneha20005-max)
 - **DSA Repository:** [DSA-in-Java](https://github.com/nandisneha20005-max/DSA-in-Java)
-- **LinkedIn:** [Add your LinkedIn profile URL here](https://www.linkedin.com/)
+- **LinkedIn:** https://www.linkedin.com/in/sneha-nandi-1297a3429?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ---
 
