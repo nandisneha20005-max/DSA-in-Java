@@ -1,109 +1,141 @@
-# 🚀 Data Structures and Algorithms in Java | 375 Days Challenge
+# 🚀 Data Structures & Algorithms in Java
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Focus-DSA-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Challenge-375%20Days-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge" />
-</p>
+### 375 Days of Consistent Learning, Coding & Problem Solving
 
-<p align="center">
-  <b>Learn • Practice • Optimize • Improve</b>
-</p>
+\<p align="center">
+&#x20; \<img src="[https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge\&logo=openjdk\&logoColor=white)" />
+&#x20; \<img src="[https://img.shields.io/badge/Challenge-375%20Days-blue?style=for-the-badge](https://img.shields.io/badge/Challenge-375%20Days-blue?style=for-the-badge)" />
+&#x20; \<img src="[https://img.shields.io/badge/Focus-DSA-success?style=for-the-badge](https://img.shields.io/badge/Focus-DSA-success?style=for-the-badge)" />
+&#x20; \<img src="[https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)" />
+\</p>
 
-<p align="center">
-  A consistent journey towards mastering Data Structures and Algorithms using Java.
-</p>
+\<p align="center">
+&#x20; \<img src="[https://img.shields.io/badge/Brute%20Force-Learn-orange?style=flat-square](https://img.shields.io/badge/Brute%20Force-Learn-orange?style=flat-square)" />
+&#x20; \<img src="[https://img.shields.io/badge/Better-Improve-blue?style=flat-square](https://img.shields.io/badge/Better-Improve-blue?style=flat-square)" />
+&#x20; \<img src="[https://img.shields.io/badge/Optimal-Optimize-green?style=flat-square](https://img.shields.io/badge/Optimal-Optimize-green?style=flat-square)" />
+\</p>
+
+\<p align="center">
+&#x20; \<b>Learn the Logic. Understand the Approach. Optimize the Solution.\</b>
+\</p>
 
 ---
 
 ## 📌 Table of Contents
 
-- [About the Repository](#-about-the-repository)
-- [My Objective](#-my-objective)
-- [Technologies and Tools](#-technologies-and-tools)
-- [Learning Roadmap](#-learning-roadmap)
-- [375 Days Challenge Progress](#-375-days-challenge-progress)
-- [Problem-Solving Approach](#-problem-solving-approach)
-- [Problem Catalogue](#-problem-catalogue)
-- [Repository Structure](#-repository-structure)
-- [How to Run the Programs](#-how-to-run-the-programs)
-- [Learning Outcomes](#-learning-outcomes)
-- [Future Goals](#-future-goals)
-- [Connect With Me](#-connect-with-me)
+1. [About This Repository](#-about-this-repository)
+2. [My Mission & Objectives](#-my-mission--objectives)
+3. [Technology Stack](#-technology-stack)
+4. [Learning Roadmap](#-learning-roadmap)
+5. [375 Days Challenge Tracker](#-375-days-challenge-tracker)
+6. [Problem-Solving Methodology](#-problem-solving-methodology)
+7. [Problem Catalogue](#-problem-catalogue)
+8. [Repository Architecture](#-repository-architecture)
+9. [How to Run the Programs](#-how-to-run-the-programs)
+10. [What You Will Learn](#-what-you-will-learn)
+11. [Future Goals](#-future-goals)
+12. [Connect With Me](#-connect-with-me)
 
 ---
 
-## 👩‍💻 About the Repository
+# 👩‍💻 About This Repository
 
-Welcome to my **DSA in Java** repository!
+Welcome to my **Data Structures and Algorithms in Java** repository!
 
 I'm **Sneha Nandi**, a B.Tech student passionate about programming, problem-solving, and software development.
 
-This repository represents my ongoing journey of learning and mastering **Data Structures and Algorithms (DSA) using Java** through a structured 375 Days Challenge.
+This repository documents my journey of mastering Data Structures and Algorithms through a structured **375 Days of DSA Challenge**, started in October 2026.
 
-The primary purpose of this repository is to document my daily coding practice, strengthen my programming fundamentals, and develop the ability to solve problems efficiently.
+My objective is to build strong programming fundamentals, improve logical thinking, understand algorithmic efficiency, and develop the ability to solve technical interview problems confidently.
 
-I believe that learning Data Structures and Algorithms is not simply about finding a solution to a problem. It is about understanding the logic, exploring different approaches, optimizing performance, and writing clean and efficient code.
+I believe that learning DSA is not simply about writing code that produces the correct output.
 
-Throughout this challenge, I practice problems from different DSA topics, analyze their complexity, and continuously improve my problem-solving techniques.
+It is about:
 
-**This repository serves as my personal learning journal, coding practice archive, and placement preparation portfolio.**
+- Understanding the problem before writing code.
+- Developing logical solutions independently.
+- Exploring multiple approaches.
+- Identifying the limitations of initial solutions.
+- Optimizing Time and Space Complexity.
+- Writing clean, readable, and efficient Java code.
 
----
+### ✨ What makes this repository different?
 
-## 🎯 My Objective
+This repository is designed as a learning resource, not just a collection of Java programs.
 
-The main objective of this 375 Days Challenge is to build a strong foundation in Data Structures and Algorithms and become confident in solving technical interview problems.
+| Feature                | What to Expect                                                 |
+| ---------------------- | -------------------------------------------------------------- |
+| Daily Practice         | Problems organized into individual day-wise folders            |
+| Multiple Approaches    | Brute Force, Better, and Optimal solutions wherever applicable |
+| Detailed Explanations  | Step-by-step logic behind each solution                        |
+| Java Implementations   | Readable and organized Java code                               |
+| Dry Runs               | Tables and examples explaining program execution               |
+| Complexity Analysis    | Time and Space Complexity of each approach                     |
+| Learning Documentation | Beginner-friendly explanations and interview takeaways         |
 
-My learning goals include:
-
-- Mastering Data Structures and Algorithms using Java.
-- Improving logical thinking and analytical skills.
-- Understanding Brute Force, Better, and Optimal solutions.
-- Learning how to optimize algorithms.
-- Developing a strong understanding of Time and Space Complexity.
-- Practicing coding problems consistently.
-- Improving Java programming skills.
-- Preparing for technical interviews and software engineering placements.
-
-**Challenge Duration:** 375 Days  
-**Started:** October 2026  
-**Primary Language:** Java  
-**Current Status:** In Progress
-
----
-
-## 🛠️ Technologies and Tools
-
-The following technologies and platforms support my learning process.
-
-| Technology / Tool | Purpose |
-|---|---|
-| Java | Primary programming language for implementing DSA |
-| JDK | Compiling and executing Java programs |
-| Git | Version control and tracking changes |
-| GitHub | Maintaining and documenting coding progress |
-| LeetCode | Practicing algorithmic problems |
-| VS Code | Writing, debugging, and managing Java programs |
-
-### Programming Language
-
-**Java**
-
-Java is my primary language for implementing different data structures and algorithms. I use Java to understand programming concepts, develop optimized solutions, and improve my coding skills.
+\<p align="center">   \<b>One Repository. 375 Days. Continuous Improvement. 🚀\</b> \</p>
 
 ---
 
-## 📚 Learning Roadmap
+# 🎯 My Mission & Objectives
 
-This repository follows a progressive learning approach, starting with fundamental programming concepts and gradually moving towards advanced algorithmic techniques.
+The main mission of this challenge is to become confident in Data Structures and Algorithms and develop strong problem-solving skills for software engineering placements.
 
-### 1. Arrays
+### My Learning Objectives
 
-Arrays are one of the fundamental data structures used to store elements of the same type in contiguous memory locations.
+- Master Data Structures and Algorithms using Java.
+- Develop strong logical and analytical thinking.
+- Understand different approaches to solving coding problems.
+- Learn how to transform brute-force solutions into optimized solutions.
+- Develop a deep understanding of Time and Space Complexity.
+- Practice coding consistently.
+- Strengthen Java programming and implementation skills.
+- Improve debugging and problem-solving abilities.
+- Build confidence in technical interviews.
 
-Topics and problems include:
+### Challenge Information
+
+| Detail           | Information        |
+| ---------------- | ------------------ |
+| Challenge        | 375 Days of DSA    |
+| Started          | October 2026       |
+| Primary Language | Java               |
+| IDE              | Visual Studio Code |
+| Version Control  | Git & GitHub       |
+| Current Progress | Day 14             |
+| Challenge Status | In Progress        |
+
+---
+
+# 🛠️ Technology Stack
+
+The following technologies and platforms are part of my learning workflow.
+
+\<p align="left">
+&#x20; \<img src="[https://skillicons.dev/icons?i=java,vscode,git,github](https://skillicons.dev/icons?i=java,vscode,git,github)" />
+\</p>
+
+| Technology / Platform | Purpose                                 |
+| --------------------- | --------------------------------------- |
+| Java                  | Primary programming language            |
+| JDK                   | Compiling and executing Java programs   |
+| Visual Studio Code    | Writing, testing, and debugging code    |
+| Git                   | Version control                         |
+| GitHub                | Code hosting and progress documentation |
+| LeetCode              | Algorithmic problem-solving practice    |
+| GeeksforGeeks         | DSA learning and coding practice        |
+
+---
+
+# 📚 Learning Roadmap
+
+My learning roadmap follows a progressive approach, starting with fundamental programming concepts and gradually moving towards advanced data structures and algorithms.
+
+## 01. Arrays
+
+Understanding array traversal, manipulation, and optimization.
+
+**Topics and Problems:**
 
 - Array Traversal
 - Largest and Smallest Element
@@ -118,25 +150,25 @@ Topics and problems include:
 - Best Time to Buy and Sell Stock
 - Chocolate Distribution Problem
 
-### 2. Searching and Sorting
+## 02. Searching and Sorting
 
-Searching and sorting algorithms are essential for efficiently locating and organizing data.
+Learning efficient techniques to locate and organize elements.
 
-Topics include:
+**Topics:**
 
 - Linear Search
 - Binary Search
 - Search in Rotated Sorted Array
 - Find Minimum in Rotated Sorted Array
-- Sorting Techniques
+- Sorting Algorithms
 - Quickselect
 - Partitioning Techniques
 
-### 3. Two Pointer Technique
+## 03. Two Pointer Technique
 
-The Two Pointer technique uses two indices to process data efficiently, often reducing unnecessary nested loops.
+Using two indices to solve array and string problems efficiently.
 
-Problems include:
+**Topics:**
 
 - Reverse an Array
 - Two Sum in Sorted Array
@@ -145,11 +177,11 @@ Problems include:
 - Trapping Rain Water
 - Union of Two Sorted Arrays
 
-### 4. Sliding Window
+## 04. Sliding Window
 
-Sliding Window is an optimization technique used to solve problems involving continuous subarrays or substrings.
+Solving continuous subarray and substring problems efficiently.
 
-Topics include:
+**Topics:**
 
 - Fixed Size Sliding Window
 - Variable Size Sliding Window
@@ -157,11 +189,11 @@ Topics include:
 - Longest Substring Without Repeating Characters
 - Subarray and Substring Problems
 
-### 5. Hashing
+## 05. Hashing
 
-Hashing helps improve searching and frequency-based operations using HashMap and HashSet.
+Understanding efficient lookup, frequency counting, and duplicate detection.
 
-Topics include:
+**Topics:**
 
 - HashMap
 - HashSet
@@ -170,37 +202,53 @@ Topics include:
 - Subarray Sum Problems
 - Efficient Element Lookup
 
-### 6. Linked Lists
+## 06. Strings
 
-Linked Lists are dynamic data structures in which elements are connected using references.
+Learning string traversal, manipulation, and character-based problem-solving.
 
-Planned topics:
+**Topics:**
 
-- Singly Linked List
-- Doubly Linked List
-- Reversing a Linked List
-- Detecting Cycles
-- Finding the Middle Node
-- Merging Sorted Linked Lists
+- String Traversal
+- String Manipulation
+- StringBuilder
+- Character Frequency
+- Remove Consecutive Characters
+- Palindrome Problems
+- Anagram Problems
+- Pattern Matching
 
-### 7. Stacks and Queues
+## 07. Stacks and Queues
 
-These data structures are important for managing data according to specific processing orders.
+Understanding linear data structures and their applications.
 
-Planned topics:
+**Topics:**
 
 - Stack Implementation
 - Queue Implementation
 - Circular Queue
-- Next Greater Element
 - Valid Parentheses
+- Next Greater Element
 - Monotonic Stack
+- Queue Using Stacks
 
-### 8. Recursion and Backtracking
+## 08. Linked Lists
 
-These techniques help solve problems by breaking them into smaller subproblems and exploring possible solutions.
+Understanding dynamic data structures and pointer-based operations.
 
-Planned topics:
+**Topics:**
+
+- Singly Linked List
+- Doubly Linked List
+- Reverse a Linked List
+- Detecting Cycles
+- Finding the Middle Node
+- Merging Sorted Linked Lists
+
+## 09. Recursion and Backtracking
+
+Breaking problems into smaller subproblems and exploring possible solutions.
+
+**Topics:**
 
 - Basic Recursion
 - Factorial and Fibonacci
@@ -209,11 +257,11 @@ Planned topics:
 - Combination Sum
 - N-Queens Problem
 
-### 9. Trees and Binary Search Trees
+## 10. Trees and Binary Search Trees
 
-Trees are hierarchical data structures used in many important programming and algorithmic problems.
+Understanding hierarchical data structures and tree traversal techniques.
 
-Planned topics:
+**Topics:**
 
 - Binary Trees
 - Tree Traversals
@@ -222,11 +270,11 @@ Planned topics:
 - Binary Search Trees
 - Height and Diameter of Trees
 
-### 10. Heaps and Priority Queues
+## 11. Heaps and Priority Queues
 
-Heaps are specialized tree-based structures used for efficient minimum and maximum element operations.
+Learning efficient minimum and maximum element operations.
 
-Planned topics:
+**Topics:**
 
 - Min Heap
 - Max Heap
@@ -235,11 +283,11 @@ Planned topics:
 - Kth Largest and Smallest Element
 - Priority Queue
 
-### 11. Graphs
+## 12. Graphs
 
-Graphs represent relationships between different objects using vertices and edges.
+Understanding relationships between vertices and edges.
 
-Planned topics:
+**Topics:**
 
 - Graph Representation
 - Breadth First Search (BFS)
@@ -249,11 +297,11 @@ Planned topics:
 - Shortest Path Algorithms
 - Minimum Spanning Tree
 
-### 12. Greedy Algorithms
+## 13. Greedy Algorithms
 
-Greedy algorithms solve problems by making locally optimal choices at each step.
+Making efficient local decisions to solve optimization problems.
 
-Planned topics:
+**Topics:**
 
 - Activity Selection
 - Fractional Knapsack
@@ -261,11 +309,11 @@ Planned topics:
 - Interval Problems
 - Minimum Platforms
 
-### 13. Dynamic Programming
+## 14. Dynamic Programming
 
-Dynamic Programming solves complex problems by storing and reusing results of overlapping subproblems.
+Solving complex problems through overlapping subproblems and optimal substructure.
 
-Planned topics:
+**Topics:**
 
 - Memoization
 - Tabulation
@@ -276,138 +324,168 @@ Planned topics:
 - Knapsack Problems
 - Grid-Based DP
 
-*The roadmap represents my learning plan. Topics will be marked as completed as I implement and document their solutions.*
+*This roadmap represents my planned learning path. Topics will be updated as I practice and document them.*
 
 ---
 
-## 📅 375 Days Challenge Progress
+# 📅 375 Days Challenge Tracker
 
-Consistency is the foundation of this challenge. I maintain separate daily folders to organize solutions and track my learning progress.
+Consistency is the foundation of this journey.
 
-### Daily Progress Tracker
+Every day, I aim to practice coding problems, understand their logic, and document the solutions in an organized manner.
 
-| Day | Focus Area | Problems / Concepts | Progress |
-|---|---|---|---|
-| Day 01 | Arrays | Fundamental array problems | Completed |
-| Day 02 | Arrays | Second Largest and Second Smallest | Completed |
-| Day 03 | Arrays | Check Sorted Array, Remove Duplicates | Completed |
-| Day 04 | Arrays | Move Zeroes, Union of Two Sorted Arrays | Completed |
-| Day 05 | Two Pointers / Sliding Window | Trapping Rain Water, Longest Substring Without Repeating Characters | Completed |
-| Day 06 | Arrays / Binary Search | Maximum Product Subarray, Minimum in Rotated Sorted Array | Completed |
-| Day 07 | Arrays | 3 Sum, Product of Array Except Self | Completed |
-| Day 08 | Two Pointers / Selection | Container With Most Water, Kth Smallest Element | Completed |
-| Day 09 | DSA Practice | Daily practice solutions | See folder |
-| Day 10 | Arrays / Hashing | Contains Duplicate, Next Permutation | Completed |
-| Day 11 | DSA Practice | Daily practice solutions | See folder |
-| Day 12 | DSA Practice | Daily practice solutions | See folder |
-| Day 13 | DSA Practice | Daily practice solutions | See folder |
-| Day 14–375 | Upcoming | New problems and advanced concepts | Upcoming |
+## Daily Progress Tracker
 
-### Progress Checklist
+| Day        | Focus Area                    | Problems / Concepts                                                 | Status        |
+| ---------- | ----------------------------- | ------------------------------------------------------------------- | ------------- |
+| Day 01     | Arrays                        | Fundamental Array Problems                                          | ✅ Completed   |
+| Day 02     | Arrays                        | Second Largest and Second Smallest                                  | ✅ Completed   |
+| Day 03     | Arrays                        | Check Sorted Array, Remove Duplicates                               | ✅ Completed   |
+| Day 04     | Arrays                        | Move Zeroes, Union of Two Sorted Arrays                             | ✅ Completed   |
+| Day 05     | Two Pointers / Sliding Window | Trapping Rain Water, Longest Substring Without Repeating Characters | ✅ Completed   |
+| Day 06     | Arrays / Binary Search        | Maximum Product Subarray, Minimum in Rotated Sorted Array           | ✅ Completed   |
+| Day 07     | Arrays                        | 3 Sum, Product of Array Except Self                                 | ✅ Completed   |
+| Day 08     | Two Pointers / Selection      | Container With Most Water, Kth Smallest Element                     | ✅ Completed   |
+| Day 09     | DSA Practice                  | Daily Practice Solutions                                            | 📂 See Folder |
+| Day 10     | Arrays / Hashing              | Contains Duplicate, Next Permutation                                | ✅ Completed   |
+| Day 11     | DSA Practice                  | Daily Practice Solutions                                            | 📂 See Folder |
+| Day 12     | DSA Practice                  | Daily Practice Solutions                                            | 📂 See Folder |
+| Day 13     | DSA Practice                  | Daily Practice Solutions                                            | 📂 See Folder |
+| Day 14     | Stack / Strings               | Valid Parentheses, Remove Consecutive Characters                    | 🆕 Added      |
+| Day 15–375 | Upcoming                      | New Problems and Advanced Concepts                                  | ⏳ Upcoming    |
 
-- [x] Begin the 375 Days Challenge.
+## 📂 Explore Daily Solutions
+
+Navigate directly to the corresponding day to explore Java implementations and documentation.
+
+| Day    | Explore                                                                                                                       |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| Day 01 | [📁 Day 01](./Day01/)                                                                                                         |
+| Day 02 | [📁 Day 02](./Day02/)                                                                                                         |
+| Day 03 | [📁 Day 03](./Day03_CheckSorted_RemoveDuplicates/)                                                                            |
+| Day 04 | [📄 Move Zeroes](./Day04_MoveZeroes_283.java) · [📄 Union of Two Sorted Arrays](./Day04_Union_Of_Two_Sorted.java)             |
+| Day 05 | [📁 Longest Substring](./Day05_Longest_Substring_without_Repeating/) · [📁 Trapping Rain Water](./Day_05_Trapping_Rainwater/) |
+| Day 06 | [📁 Day 06](./Day06/)                                                                                                         |
+| Day 07 | [📁 Day 07](./Day07/)                                                                                                         |
+| Day 08 | [📁 Day 08](./Day08/)                                                                                                         |
+| Day 09 | [📁 Day 09](./Day09/)                                                                                                         |
+| Day 10 | [📁 Day 10](./Day10/)                                                                                                         |
+| Day 11 | [📁 Day 11](./Day11/)                                                                                                         |
+| Day 12 | [📁 Day 12](./Day12/)                                                                                                         |
+| Day 13 | [📁 Day 13](./Day13/)                                                                                                         |
+| Day 14 | [📁 Day 14](./Day14/)                                                                                                         |
+
+## 🏁 Challenge Milestones
+
+- [x] Start the 375 Days DSA Challenge.
 - [x] Practice fundamental array problems.
 - [x] Learn Two Pointer techniques.
 - [x] Practice Sliding Window.
-- [x] Learn Binary Search.
+- [x] Learn Binary Search fundamentals.
 - [x] Practice Hashing.
+- [x] Begin Stack and String problem-solving.
 - [ ] Complete all 375 days.
 - [ ] Master advanced DSA concepts.
 - [ ] Strengthen technical interview preparation.
 
-**Note:** Daily entries and problem counts will be updated as the repository grows. A folder's existence does not automatically mean all its problems are completed.
+*Progress statuses are maintained separately from the existence of a folder. A day is marked completed when its intended work is finished.*
 
 ---
 
-## 🧠 Problem-Solving Approach
+# 🧠 Problem-Solving Methodology
 
-I follow a structured problem-solving methodology to understand the problem, explore possible solutions, and improve algorithmic efficiency.
+I believe that understanding the logic behind a solution is more important than memorizing code.
 
-Whenever applicable, I try to understand three approaches.
+Therefore, I follow a structured approach whenever I solve a DSA problem.
 
-### 1. Brute Force Approach
+## 1. Brute Force Approach
 
-The Brute Force approach is the simplest straightforward method of solving a problem.
+The straightforward solution that helps establish the basic logic.
 
-**My focus:**
-- Understand the problem statement.
-- Develop the basic logic.
-- Explore all possible combinations or solutions.
-- Identify unnecessary operations and inefficiencies.
+**Learning Focus:**
 
-### 2. Better Approach
+- Understand the problem.
+- Identify possible solutions.
+- Develop the initial algorithm.
+- Analyze unnecessary operations.
+- Understand its limitations.
 
-The Better approach improves upon the Brute Force solution by reducing unnecessary computations.
+## 2. Better Approach
 
-**My focus:**
-- Optimize the initial logic.
+An improved solution that reduces unnecessary computations.
+
+**Learning Focus:**
+
+- Improve the initial logic.
 - Choose appropriate data structures.
 - Reduce redundant operations.
-- Improve overall performance.
+- Improve efficiency.
 
-### 3. Optimal Approach
+## 3. Optimal Approach
 
-The Optimal approach aims to achieve the best practical time and space complexity for the given problem constraints.
+An efficient solution that aims for the best practical complexity under the given constraints.
 
-**My focus:**
-- Apply efficient algorithms and techniques.
+**Learning Focus:**
+
+- Apply suitable algorithms.
 - Minimize unnecessary iterations.
 - Optimize auxiliary space.
-- Handle edge cases and large inputs.
+- Handle edge cases.
+- Write clean and efficient code.
 
-### Complexity Analysis
+### 📊 Complexity Analysis
 
-For every solution, I aim to understand:
+Every solution includes complexity analysis wherever applicable.
 
-**Time Complexity:** Measures how the execution time of an algorithm grows with input size.
-
-**Space Complexity:** Measures how much additional memory an algorithm requires as the input size increases.
-
-Common complexity classes:
-
-| Complexity | Meaning |
-|---|---|
-| O(1) | Constant Time |
-| O(log n) | Logarithmic Time |
-| O(n) | Linear Time |
+| Complexity | Description       |
+| ---------- | ----------------- |
+| O(1)       | Constant Time     |
+| O(log n)   | Logarithmic Time  |
+| O(n)       | Linear Time       |
 | O(n log n) | Linearithmic Time |
-| O(n²) | Quadratic Time |
-| O(2ⁿ) | Exponential Time |
+| O(n²)      | Quadratic Time    |
+| O(2ⁿ)      | Exponential Time  |
+
+**Time Complexity:** Measures how the number of operations grows with input size.
+
+**Space Complexity:** Measures the additional memory required by an algorithm.
 
 ---
 
-## 🧩 Problem Catalogue
+# 🧩 Problem Catalogue
 
-Below are selected problems from my practice journey, along with their commonly used optimal techniques and expected complexities.
+A quick reference to selected problems practiced throughout this journey.
 
-| Problem | Technique | Time Complexity | Space Complexity |
-|---|---|---|---|
-| Largest Element in Array | Linear Traversal | O(n) | O(1) |
-| Second Largest Element | Single Traversal | O(n) | O(1) |
-| Check if Array is Sorted | Linear Traversal | O(n) | O(1) |
-| Remove Duplicates | Two Pointers | O(n) | O(1) |
-| Move Zeroes | Two Pointers | O(n) | O(1) |
-| Union of Two Sorted Arrays | Two Pointers | O(n + m) | O(n + m) |
-| Trapping Rain Water | Two Pointers | O(n) | O(1) |
-| Longest Substring Without Repeating Characters | Sliding Window + HashSet | O(n) average | O(n) |
-| Maximum Product Subarray | Dynamic Tracking | O(n) | O(1) |
-| Find Minimum in Rotated Sorted Array | Binary Search | O(log n) | O(1) |
-| 3 Sum | Sorting + Two Pointers | O(n²) | O(1) auxiliary, excluding sorting |
-| Product of Array Except Self | Prefix and Suffix Products | O(n) | O(1) auxiliary, excluding output |
-| Container With Most Water | Two Pointers | O(n) | O(1) |
-| Kth Smallest Element | Quickselect | O(n) average | O(1) auxiliary |
-| Contains Duplicate | HashSet | O(n) average | O(n) |
-| Next Permutation | Breakpoint + Reverse | O(n) | O(1) |
-| Chocolate Distribution | Sorting + Sliding Window | O(n log n) | Depends on sorting |
-| Best Time to Buy and Sell Stock | Single Traversal | O(n) | O(1) |
+| Problem                                        | Main Technique                  | Time Complexity | Space Complexity                  |
+| ---------------------------------------------- | ------------------------------- | --------------- | --------------------------------- |
+| Largest Element in Array                       | Linear Traversal                | O(n)            | O(1)                              |
+| Second Largest Element                         | Single Traversal                | O(n)            | O(1)                              |
+| Check if Array is Sorted                       | Linear Traversal                | O(n)            | O(1)                              |
+| Remove Duplicates                              | Two Pointers                    | O(n)            | O(1)                              |
+| Move Zeroes                                    | Two Pointers                    | O(n)            | O(1)                              |
+| Union of Two Sorted Arrays                     | Two Pointers                    | O(n + m)        | O(n + m)                          |
+| Trapping Rain Water                            | Two Pointers                    | O(n)            | O(1)                              |
+| Longest Substring Without Repeating Characters | Sliding Window + HashSet        | O(n) average    | O(n)                              |
+| Maximum Product Subarray                       | Dynamic Tracking                | O(n)            | O(1)                              |
+| Find Minimum in Rotated Sorted Array           | Binary Search                   | O(log n)        | O(1)                              |
+| 3 Sum                                          | Sorting + Two Pointers          | O(n²)           | O(1) auxiliary, excluding sorting |
+| Product of Array Except Self                   | Prefix and Suffix Products      | O(n)            | O(1) auxiliary, excluding output  |
+| Container With Most Water                      | Two Pointers                    | O(n)            | O(1)                              |
+| Kth Smallest Element                           | Quickselect                     | O(n) average    | O(1) auxiliary                    |
+| Contains Duplicate                             | HashSet                         | O(n) average    | O(n)                              |
+| Next Permutation                               | Breakpoint + Reverse            | O(n)            | O(1)                              |
+| Chocolate Distribution                         | Sorting + Sliding Window        | O(n log n)      | Depends on sorting                |
+| Best Time to Buy and Sell Stock                | Single Traversal                | O(n)            | O(1)                              |
+| Valid Parentheses                              | Stack                           | O(n)            | O(n)                              |
+| Remove Consecutive Characters                  | String Traversal / Two Pointers | O(n)            | O(n)                              |
 
-*Complexities describe standard implementations and may vary depending on the exact code, sorting method, and auxiliary data structures.*
+*Complexities refer to standard optimized implementations and may vary with implementation details.*
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Architecture
 
-The repository is organized into individual daily folders to make the learning journey easy to navigate.
+The repository follows a day-wise structure to make code navigation and learning documentation easier.
 
 ```text
 DSA-in-Java/
@@ -430,39 +508,57 @@ DSA-in-Java/
 ├── Day11/
 ├── Day12/
 ├── Day13/
+├── Day14/
+│   ├── README.md
+│   └── Java Solutions
 │
 └── README.md
 ```
 
-### Explore My Daily Solutions
+### 📖 Daily Documentation Structure
 
-| Day | Folder / Solution |
-|---|---|
-| Day 01 | [Explore Day 01](./Day01/) |
-| Day 02 | [Explore Day 02](./Day02/) |
-| Day 03 | [Explore Day 03](./Day03_CheckSorted_RemoveDuplicates/) |
-| Day 04 | [Move Zeroes](./Day04_MoveZeroes_283.java) · [Union of Two Sorted Arrays](./Day04_Union_Of_Two_Sorted.java) |
-| Day 05 | [Longest Substring](./Day05_Longest_Substring_without_Repeating/) · [Trapping Rain Water](./Day_05_Trapping_Rainwater/) |
-| Day 06 | [Explore Day 06](./Day06/) |
-| Day 07 | [Explore Day 07](./Day07/) |
-| Day 08 | [Explore Day 08](./Day08/) |
-| Day 09 | [Explore Day 09](./Day09/) |
-| Day 10 | [Explore Day 10](./Day10/) |
-| Day 11 | [Explore Day 11](./Day11/) |
-| Day 12 | [Explore Day 12](./Day12/) |
-| Day 13 | [Explore Day 13](./Day13/) |
+Each daily folder is intended to provide a consistent learning experience.
+
+```text
+Day14/
+│
+├── README.md
+│
+├── ValidParentheses.java
+│
+└── RemoveConsecutiveCharacters.java
+```
+
+The filenames above illustrate the intended organization; use the actual filenames in the repository.
+
+### Every Daily README Includes
+
+- Problem Statement
+- Input and Output Examples
+- Important Concepts
+- Brute Force Approach
+- Better Approach (where applicable)
+- Optimal Approach
+- Step-by-Step Algorithm
+- Java Implementations
+- Dry Run and Explanation
+- Time and Space Complexity
+- Approach Comparison
+- Interview Questions and Key Takeaways
+
+**The root README serves as the main navigation and project overview. Individual daily README files provide the detailed technical explanations.**
 
 ---
 
-## 💻 How to Run the Programs
+# 💻 How to Run the Programs
 
-You can clone this repository and execute the Java programs locally using any Java-supported IDE or terminal.
+You can clone this repository and execute the Java programs locally.
 
-### Prerequisites
+## Prerequisites
 
 - Java Development Kit (JDK) installed.
-- Basic knowledge of Java syntax.
-- VS Code, IntelliJ IDEA, Eclipse, or another Java IDE.
+- Basic understanding of Java.
+- Visual Studio Code, IntelliJ IDEA, Eclipse, or another Java IDE.
 
 ### Step 1: Clone the Repository
 
@@ -479,87 +575,100 @@ cd DSA-in-Java
 ### Step 3: Navigate to a Specific Day
 
 ```bash
-cd Day07
+cd Day14
 ```
 
 ### Step 4: Compile the Java Program
 
 ```bash
-javac Solution.java
+javac ValidParentheses.java
 ```
 
 ### Step 5: Execute the Program
 
 ```bash
-java Solution
+java ValidParentheses
 ```
 
-**Important:** Replace `Solution.java` and `Solution` with the actual filename and class name used in the selected Java program.
+**Important:** The filename, public class name, and execution command must match. For online coding platforms, follow the platform's required class and method signature. Some platforms provide their own driver code, so a separate `main()` method may not be required.
 
 ---
 
-## 📈 Learning Outcomes
+# 📈 What You Will Learn
 
-Through this challenge, I aim to achieve the following:
+Through this challenge, I aim to develop the following skills:
 
-- Strong understanding of Java programming.
-- Improved logical and analytical thinking.
-- Better understanding of fundamental and advanced data structures.
-- Ability to identify appropriate algorithms for different problems.
-- Confidence in optimizing code.
-- Knowledge of time and space complexity analysis.
-- Improved debugging and coding practices.
-- Strong preparation for technical interviews.
+| Skill                 | Learning Outcome                                    |
+| --------------------- | --------------------------------------------------- |
+| Java Programming      | Strong programming fundamentals                     |
+| Data Structures       | Understanding how different data structures work    |
+| Algorithms            | Selecting efficient problem-solving techniques      |
+| Logical Thinking      | Breaking complex problems into smaller steps        |
+| Optimization          | Improving Time and Space Complexity                 |
+| Debugging             | Identifying and fixing programming errors           |
+| Interview Preparation | Building confidence in technical interviews         |
+| Documentation         | Writing readable and maintainable code explanations |
 
 ---
 
-## 🌱 Future Goals
+# 🚀 Future Goals
 
-My learning journey goes beyond completing 375 days of coding practice.
+Completing this challenge is one milestone in a much bigger learning journey.
 
 My future goals include:
 
 - Complete the 375 Days DSA Challenge.
-- Practice more Medium and Hard-level problems.
+- Solve more Medium and Hard-level problems.
 - Master advanced Data Structures and Algorithms.
-- Improve Core Java knowledge.
-- Strengthen object-oriented programming concepts.
-- Build real-world Java development projects.
+- Strengthen Core Java and Object-Oriented Programming.
+- Build practical Java and software development projects.
+- Improve coding speed and accuracy.
 - Prepare for software engineering interviews.
 - Become a confident and efficient problem solver.
 
 ---
 
-## 🤝 Connect With Me
+# 🤝 Connect With Me
 
-I'm always interested in connecting with fellow developers, learners, and technology enthusiasts.
+I'm always interested in connecting with fellow developers, students, and technology enthusiasts.
 
-**Sneha Nandi**  
-B.Tech Student | Java Programmer | DSA Enthusiast
+\<p align="center">
+&#x20; \<b>Sneha Nandi\</b>\<br/>
+&#x20; B.Tech Student | Java Programmer | DSA Enthusiast
+\</p>
 
-- **GitHub:** [nandisneha20005-max](https://github.com/nandisneha20005-max)
-- **DSA Repository:** [DSA-in-Java](https://github.com/nandisneha20005-max/DSA-in-Java)
-- **LinkedIn:** https://www.linkedin.com/in/sneha-nandi-1297a3429?utm_source=share_via&utm_content=profile&utm_medium=member_android
-
----
-
-## ⭐ Support My Journey
-
-If you find this repository helpful, please consider giving it a ⭐.
-
-Your support and feedback motivate me to keep learning, practicing, and improving every day.
-
-<p align="center">
-  <h3>Consistency Over Perfection 🚀</h3>
-  <b>One Problem. One Concept. One Day at a Time.</b>
-  <br/>
-  <i>Learning today, improving tomorrow, and building a better future.</i>
-</p>
+\<p align="center">
+&#x20; \<a href="[https://github.com/nandisneha20005-max](https://github.com/nandisneha20005-max)">
+&#x20;   \<img src="[https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge\&logo=github)" />
+&#x20; \</a>
+&#x20; \<a href="[https://www.linkedin.com/in/sneha-nandi-1297a3429?utm_source=share_via&utm_content=profile&utm_medium=member_android](https://www.linkedin.com/in/sneha-nandi-1297a3429?utm_source=share_via\&utm_content=profile\&utm_medium=member_android)">
+&#x20;   \<img src="[https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge\&logo=linkedin)" />
+&#x20; \</a>
+\</p>
 
 ---
 
-<p align="center">
-  <b>Thank you for visiting my DSA in Java repository!</b>
-</p>
+# ⭐ Support My Journey
 
-**Last Updated:** November 2026
+If you find this repository useful for learning Data Structures and Algorithms, consider giving it a ⭐.
+
+Your feedback, suggestions, and support are always appreciated!
+
+\<p align="center">
+&#x20; \<h3>Consistency Over Perfection 🚀\</h3>
+&#x20; \<b>One Problem. One Concept. One Day at a Time.\</b>
+&#x20; \<br/>
+&#x20; \<i>Learning today, improving tomorrow, and building a better future.\</i>
+\</p>
+
+---
+
+\<p align="center">
+&#x20; \<b>Thank you for visiting my DSA in Java repository!\</b>
+&#x20; \<br/>\<br/>
+&#x20; Made with ❤️ and Java ☕
+&#x20; \<br/>
+&#x20; \<sub>375 Days of Learning • Practicing • Growing\</sub>
+\</p>
+
+**Last Updated:** November 16, 2026
