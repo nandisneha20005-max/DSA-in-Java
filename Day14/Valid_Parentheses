@@ -1,0 +1,96 @@
+#BRUTE FORCE APPROACH
+class Solution {
+    public boolean isValid(String s) {
+
+        while (s.contains("()") ||
+               s.contains("{}") ||
+               s.contains("[]")) {
+
+            s = s.replace("()", "");
+            s = s.replace("{}", "");
+            s = s.replace("[]", "");
+        }
+
+        return s.isEmpty();
+    }
+}
+
+#BETTER APPROACH
+
+import java.util.*;
+
+class Solution {
+    public boolean isValid(String s) {
+
+        Stack<Character> stack = new Stack<>();
+
+        for (char ch : s.toCharArray()) {
+
+            if (ch == '(' || ch == '{' || ch == '[') {
+                stack.push(ch);
+            }
+
+            else {
+
+                if (stack.isEmpty()) {
+                    return false;
+                }
+
+                char top = stack.peek();
+
+                if ((ch == ')' && top == '(') ||
+                    (ch == '}' && top == '{') ||
+                    (ch == ']' && top == '[')) {
+
+                    stack.pop();
+                }
+
+                else {
+                    return false;
+                }
+            }
+        }
+
+        return stack.isEmpty();
+    }
+}
+
+#OPTIMAL APPROACH
+
+class Solution {
+    public boolean isValid(String s) {
+
+        char[] stack = new char[s.length()];
+        int top = -1;
+
+        for (char ch : s.toCharArray()) {
+
+            if (ch == '(' || ch == '{' || ch == '[') {
+
+                stack[++top] = ch;
+
+            } else {
+
+                if (top == -1) {
+                    return false;
+                }
+
+                char open = stack[top];
+
+                if ((ch == ')' && open == '(') ||
+                    (ch == '}' && open == '{') ||
+                    (ch == ']' && open == '[')) {
+
+                    top--;
+                }
+
+                else {
+                    return false;
+                }
+            }
+        }
+
+        return top == -1;
+    }
+}
+
