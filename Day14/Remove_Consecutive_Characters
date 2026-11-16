@@ -1,0 +1,77 @@
+#BRUTE FORCE APPROACH
+class Solution {
+    public String removeConsecutiveCharacter(String s) {
+
+        boolean found = true;
+
+        while (found) {
+
+            found = false;
+
+            for (int i = 0; i < s.length() - 1; i++) {
+
+                if (s.charAt(i) == s.charAt(i + 1)) {
+
+                    s = s.substring(0, i + 1) +
+                        s.substring(i + 2);
+
+                    found = true;
+                    break;
+                }
+            }
+        }
+
+        return s;
+    }
+}
+
+#BETTER APPROACH(USING TWO POINTER)
+
+class Solution {
+    public String removeConsecutiveCharacter(String s) {
+
+        if (s.length() == 0) {
+            return s;
+        }
+
+        StringBuilder result = new StringBuilder();
+
+        result.append(s.charAt(0));
+
+        for (int i = 1; i < s.length(); i++) {
+
+            if (s.charAt(i) != s.charAt(i - 1)) {
+
+                result.append(s.charAt(i));
+            }
+        }
+
+        return result.toString();
+    }
+}
+#Optimal Approach
+
+class Solution {
+    public String removeConsecutiveCharacter(String s) {
+
+        if (s.length() == 0) {
+            return s;
+        }
+
+        char[] arr = s.toCharArray();
+
+        int j = 0;
+
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] != arr[j]) {
+
+                j++;
+                arr[j] = arr[i];
+            }
+        }
+
+        return new String(arr, 0, j + 1);
+    }
+}
+
